@@ -101,27 +101,22 @@ const Header = () => {
       )}
 
       {/* Flex Container for Animation and Text */}
-      <div className="relative z-10 flex items-center text-center px-4">
-        <div>
+      <div className="relative z-10 flex items-center justify-center text-center px-6 py-12 md:py-16 lg:py-20">
+        <div className="max-w-5xl">
           {/* Header Content */}
-          <h1 className="text-4xl md:text-6xl font-semibold tracking-wider mb-6 text-gray-100 drop-shadow-md">
-            Leading Global{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-cyan-600">
-              Data Analytics
-            </span>{" "}
-            Company
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-relaxed mb-8 text-gray-100 drop-shadow-lg">
+            <span>Leading Global</span>
+            <br />
+            <span
+              className="mt-8 block bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-cyan-600 animate-gradient"
+              style={{
+                backgroundSize: "200% 200%",
+                animation: "gradient-move 5s ease infinite",
+              }}
+            >
+              Data Analytics Company
+            </span>
           </h1>
-          <p className="text-lg md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Consortium Analytics is a global Data Analytics and Business
-            Intelligence Company. Our mission is to transform brands and drive
-            business growth by turning complex data into actionable insights.
-          </p>
-          <a
-            href="#"
-            className="mt-6 inline-block px-6 py-3 bg-transparent border-2 border-gray-100 text-white font-quick font-semibold rounded-md hover:bg-gray-100 hover:text-gray-900 transition-all duration-300"
-          >
-            Request a Demo
-          </a>
         </div>
       </div>
     </header>
