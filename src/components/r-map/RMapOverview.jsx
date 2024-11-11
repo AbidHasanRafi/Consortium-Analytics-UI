@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import GeoMap from "./GeoMap"; // Make sure to import your GeoMap component
+import GeoMap from "./GeoMap";
 
 const RMapOverview = () => {
   const headerRef = useRef(null);
@@ -28,9 +28,9 @@ const RMapOverview = () => {
   return (
     <section
       id="products"
-      className="bg-gradient-to-b from-gray-900 via-[#002430] to-gray-900 text-white py-16 px-6 md:px-12"
+      className="bg-white text-gray-900 py-16 px-6 md:px-12"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="bg-neutral-200/40 rounded-md p-8 max-w-7xl mx-auto shadow-sm">
         {/* Header Section */}
         <motion.div
           className="text-center mb-12"
@@ -39,8 +39,8 @@ const RMapOverview = () => {
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -50 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-abel font-bold text-white mb-4 py-5">
-            RealEstate Property Insights
+          <h2 className="text-3xl font-semibold text-gray-800 mb-4">
+            Get Location-based Aerial Insights
           </h2>
         </motion.div>
 
@@ -55,6 +55,7 @@ const RMapOverview = () => {
           >
             <GeoMap />
           </motion.div>
+
           {/* Text Content */}
           <motion.div
             className="flex-1 space-y-6 pt-4"
@@ -62,10 +63,10 @@ const RMapOverview = () => {
             animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 50 }}
             transition={{ duration: 0.8 }}
           >
-            <p className="text-gray-200 text-xl">
+            <p className="text-gray-800 text-lg">
               Harness the power of data with these advanced analytics features:
             </p>
-            <ul className="list-disc pl-6 text-gray-200 text-lg space-y-2">
+            <ul className="list-disc pl-6 text-gray-700 text-base space-y-2">
               <li>
                 Interactive Geo Maps: Explore state-level demand insights.
               </li>
@@ -103,6 +104,57 @@ const RMapOverview = () => {
             </motion.div>
           </motion.div>
         </div>
+      </div>
+
+      {/* New Section with Grid Columns */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+        <motion.section
+          className="bg-neutral-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          viewport={{ once: false, amount: 0.25 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0 }}
+        >
+          <p className="text-gray-900 mb-4">
+            Unlock the power of data visualization and analysis:
+          </p>
+          <ul className="text-gray-800 list-disc list-inside space-y-2 mb-3">
+            <li>Interactive visualizations for better insights</li>
+            <li>Step-by-step model-building guides</li>
+          </ul>
+        </motion.section>
+
+        <motion.section
+          className="bg-neutral-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          viewport={{ once: false, amount: 0.25 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+        >
+          <p className="text-gray-900 mb-4">
+            Explore documentation for effective data analysis:
+          </p>
+          <ul className="text-gray-800 list-disc list-inside space-y-2 mb-3">
+            <li>Guides for data cleaning and preprocessing</li>
+            <li>Advanced statistical analysis methods</li>
+          </ul>
+        </motion.section>
+
+        <motion.section
+          className="bg-neutral-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          viewport={{ once: false, amount: 0.25 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+        >
+          <p className="text-gray-900 mb-4">
+            Get expert support for your projects:
+          </p>
+          <ul className="text-gray-800 list-disc list-inside space-y-2 mb-3">
+            <li>Personalized analysis tips and advice</li>
+            <li>Access to FAQs and troubleshooting</li>
+          </ul>
+        </motion.section>
       </div>
     </section>
   );

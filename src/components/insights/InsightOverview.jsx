@@ -113,6 +113,57 @@ const VisualizationAnalytics = () => {
             <Chart />
           </motion.div>
         </div>
+
+        {/* New Section with Grid Columns */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+          <motion.section
+            className="bg-gray-800 bg-opacity-40 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            viewport={{ once: false, amount: 0.25 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0 }}
+          >
+            <p className="text-gray-300 mb-4">
+              Unlock the power of data visualization and analysis:
+            </p>
+            <ul className="text-gray-400 list-disc list-inside space-y-1 mb-3">
+              <li>Interactive visualizations for better insights</li>
+              <li>Step-by-step model-building guides</li>
+            </ul>
+          </motion.section>
+
+          <motion.section
+            className="bg-gray-800 bg-opacity-40 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            viewport={{ once: false, amount: 0.25 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+          >
+            <p className="text-gray-300 mb-4">
+              Explore documentation for effective data analysis:
+            </p>
+            <ul className="text-gray-400 list-disc list-inside space-y-1 mb-3">
+              <li>Guides for data cleaning and preprocessing</li>
+              <li>Advanced statistical analysis methods</li>
+            </ul>
+          </motion.section>
+
+          <motion.section
+            className="bg-gray-800 bg-opacity-40 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            viewport={{ once: false, amount: 0.25 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          >
+            <p className="text-gray-300 mb-4">
+              Get expert support for your projects:
+            </p>
+            <ul className="text-gray-400 list-disc list-inside space-y-1 mb-3">
+              <li>Personalized analysis tips and advice</li>
+              <li>Access to FAQs and troubleshooting</li>
+            </ul>
+          </motion.section>
+        </div>
       </div>
     </section>
   );
