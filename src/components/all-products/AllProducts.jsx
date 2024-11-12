@@ -62,7 +62,7 @@ function AllProducts() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <h2 className="text-4xl font-bold font-abel text-white mb-4 py-5">
-          Our Other Products
+          Available Solutions
         </h2>
       </motion.div>
       <Slider cards={cards} />

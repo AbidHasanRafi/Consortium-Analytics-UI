@@ -7,6 +7,8 @@ import AllResources from "../../all-resources/AllResources";
 import OurLocation from "../../our-location/OurLocation";
 import Carousel from "../../logo-carousel/Carousel";
 import RetailAnalysis from "../../retail/RetailAnalysis";
+import DataEngineering from "../../data-engineering/DataEngineering";
+import ContactForm from "../../contact-form/ContactForm";
 
 const Home = () => {
   return (
@@ -16,8 +18,10 @@ const Home = () => {
       <InsightOverview />
       <RMapOverview />
       <RetailAnalysis />
+      <DataEngineering />
       <AllProducts />
       <AllResources />
+      <ContactForm />
       <OurLocation />
     </div>
   );

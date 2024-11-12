@@ -30,7 +30,7 @@ const RMapOverview = () => {
       id="products"
       className="bg-white text-gray-900 py-16 px-6 md:px-12"
     >
-      <div className="bg-neutral-200/40 rounded-md p-8 max-w-7xl mx-auto shadow-sm">
+      <div className="rounded-md p-8 max-w-7xl mx-auto shadow-sm">
         {/* Header Section */}
         <motion.div
           className="text-center mb-12"
