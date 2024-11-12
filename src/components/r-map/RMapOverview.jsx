@@ -40,7 +40,7 @@ const RMapOverview = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-            Get Location-based Aerial Insights
+            Analytics and Insights
           </h2>
         </motion.div>
 
@@ -63,7 +63,7 @@ const RMapOverview = () => {
             animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 50 }}
             transition={{ duration: 0.8 }}
           >
-            <p className="text-gray-800 text-lg">
+            <p className="text-gray-800 font-semibold text-lg">
               Harness the power of data with these advanced analytics features:
             </p>
             <ul className="list-disc pl-6 text-gray-700 text-base space-y-2">
@@ -115,7 +115,7 @@ const RMapOverview = () => {
           viewport={{ once: false, amount: 0.25 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0 }}
         >
-          <p className="text-gray-900 mb-4">
+          <p className="text-gray-900 font-semibold mb-4">
             Unlock the power of data visualization and analysis:
           </p>
           <ul className="text-gray-800 list-disc list-inside space-y-2 mb-3">
@@ -131,7 +131,7 @@ const RMapOverview = () => {
           viewport={{ once: false, amount: 0.25 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
         >
-          <p className="text-gray-900 mb-4">
+          <p className="text-gray-900 font-semibold mb-4">
             Explore documentation for effective data analysis:
           </p>
           <ul className="text-gray-800 list-disc list-inside space-y-2 mb-3">
@@ -147,7 +147,7 @@ const RMapOverview = () => {
           viewport={{ once: false, amount: 0.25 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         >
-          <p className="text-gray-900 mb-4">
+          <p className="text-gray-900 font-semibold mb-4">
             Get expert support for your projects:
           </p>
           <ul className="text-gray-800 list-disc list-inside space-y-2 mb-3">

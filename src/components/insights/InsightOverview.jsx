@@ -47,7 +47,7 @@ const VisualizationAnalytics = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl font-bold font-abel text-white mb-4 py-5">
-            Visualize & Analyze Data
+            Visualization of Data
           </h2>
         </motion.div>
 
@@ -123,7 +123,7 @@ const VisualizationAnalytics = () => {
             viewport={{ once: false, amount: 0.25 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0 }}
           >
-            <p className="text-gray-300 mb-4">
+            <p className="text-gray-300 font-semibold mb-4">
               Unlock the power of data visualization and analysis:
             </p>
             <ul className="text-gray-400 list-disc list-inside space-y-1 mb-3">
@@ -139,7 +139,7 @@ const VisualizationAnalytics = () => {
             viewport={{ once: false, amount: 0.25 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
           >
-            <p className="text-gray-300 mb-4">
+            <p className="text-gray-300 font-semibold mb-4">
               Explore documentation for effective data analysis:
             </p>
             <ul className="text-gray-400 list-disc list-inside space-y-1 mb-3">
@@ -155,7 +155,7 @@ const VisualizationAnalytics = () => {
             viewport={{ once: false, amount: 0.25 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           >
-            <p className="text-gray-300 mb-4">
+            <p className="text-gray-300 font-semibold mb-4">
               Get expert support for your projects:
             </p>
             <ul className="text-gray-400 list-disc list-inside space-y-1 mb-3">
