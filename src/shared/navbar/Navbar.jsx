@@ -38,7 +38,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed font-quick w-full top-0 z-50 transition-colors duration-300 ${
+      className={`fixed font-inter w-full top-0 z-50 transition-colors duration-300 ${
         scrolled ? "bg-gray-800 shadow-lg" : "bg-transparent"
       }`}
     >
@@ -53,7 +53,7 @@ const Navbar = () => {
                 alt="Consortium Analytics"
               />
             </a>
-            <a href="#" className="w-14 text-xs text-white ml-2">
+            <a href="#" className="w-14 text-xs font-bold text-white ml-2">
               Consortium Analytics
             </a>
           </div>
@@ -69,7 +69,7 @@ const Navbar = () => {
               >
                 <a
                   href={menu.link}
-                  className="text-base text-gray-200 hover:text-blue-400 flex items-center p-3 group relative"
+                  className="text-base font-bold text-gray-200 hover:text-blue-400 flex items-center p-3 group relative"
                 >
                   {menu.name}
                   {menu.submenu && (
@@ -82,7 +82,7 @@ const Navbar = () => {
                 {/* Submenu */}
                 {menu.submenu && activeSubMenu === menu.name && (
                   <div
-                    className={`absolute left-1/2 transform -translate-x-1/2 mt-4 bg-white rounded-lg shadow-lg p-6 z-50 w-[400px] border border-gray-300`}
+                    className={`absolute left-1/2 transform -translate-x-1/2 mt-4 bg-white rounded-lg shadow-lg p-6 z-50 w-[450px] border border-gray-300`}
                     onMouseEnter={() => handleSubMenuOpen(menu.name)}
                     onMouseLeave={handleSubMenuClose}
                   >
@@ -103,7 +103,7 @@ const Navbar = () => {
                     {/* Consortium Analytics for Section */}
                     {menu.consortium && (
                       <div className="mt-6">
-                        <h4 className="text-blue-400 text-sm font-bold uppercase mb-5 border-b-2 border-blue-400 pb-2">
+                        <h4 className="text-blue-400 text-sm uppercase mb-5 border-b-2 border-blue-400 pb-2">
                           Consortium Analytics for:
                         </h4>
                         <div className="grid grid-cols-2 gap-4">
@@ -130,7 +130,7 @@ const Navbar = () => {
           <div className="hidden md:flex">
             <a
               href="#"
-              className="bg-transparent text-gray-300 hover:text-green-400 px-3 py-1 rounded-md border-2 border-gray-300 hover:border-green-500 transition duration-300 text-base"
+              className="bg-transparent text-gray-300 px-6 py-3 font-light rounded-md border-2 border-gray-300 hover:bg-slate-100/10 transition duration-300 text-xs"
             >
               Contact
             </a>

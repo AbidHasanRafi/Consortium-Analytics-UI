@@ -23,13 +23,11 @@ const data = [
 
 const Chart = () => {
   return (
-    <div style={{ width: "100%", height: 380 }}>
-      <h2
-        style={{ textAlign: "center", marginBottom: "10px", fontWeight: "600" }}
-      >
-        Product Performance Analytics Sample
+    <div className="w-full max-w-7xl mx-auto mt-10 lg:mt-0 py-0 lg:py-6 px-0 lg:px-8">
+      <h2 className="text-center mb-6 text-lg sm:text-xl font-semibold text-gray-900">
+        Product Performance Analytics
       </h2>
-      <ResponsiveContainer>
+      <ResponsiveContainer width="100%" height={300} className="sm:h-[380px]">
         <ComposedChart
           data={data}
           margin={{

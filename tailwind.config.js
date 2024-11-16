@@ -6,6 +6,8 @@ export default {
       fontFamily: {
         quick: ["Quicksand", "sans-serif"],
         abel: ["Abel", "sans-serif"],
+        mont: ["Montserrat", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
     },
   },

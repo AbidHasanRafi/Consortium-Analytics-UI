@@ -6,11 +6,13 @@ import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      <Outlet />
+      <main className="flex-grow w-full">
+        <Outlet />
+      </main>
       <Footer />
-    </>
+    </div>
   );
 }
 

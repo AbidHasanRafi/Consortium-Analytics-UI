@@ -48,11 +48,34 @@ const Carousel = () => {
     cssEase: "linear",
     pauseOnHover: false,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          centerMode: false,
+        },
+      },
+    ],
   };
 
   return (
     <div className="carousel-container relative overflow-hidden w-full h-[150px] md:h-[200px] bg-gray-900">
-      <p className="text-center text-white mb-20">
+      <p className="text-center text-white mb-4 md:mb-10">
         Access more than 50,000 datasets from trusted sources
       </p>
       <Slider {...settings}>
@@ -61,7 +84,7 @@ const Carousel = () => {
             <img
               src={src}
               alt={`carousel-item-${index}`}
-              className="w-[100px] h-[50px] md:w-[150px] md:h-[70px] object-contain"
+              className="w-[80px] h-[40px] sm:w-[95px] sm:h-[50px] md:w-[130px] md:h-[60px] object-contain mx-0.5"
             />
           </div>
         ))}

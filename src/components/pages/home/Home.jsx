@@ -9,20 +9,22 @@ import Carousel from "../../logo-carousel/Carousel";
 import RetailAnalysis from "../../retail/RetailAnalysis";
 import DataEngineering from "../../data-engineering/DataEngineering";
 import ContactForm from "../../contact-form/ContactForm";
+import TechNodes from "../../tech-nodes/TechNodes";
 
 const Home = () => {
   return (
-    <div className="font-quick">
+    <div className="font-mont bg-[#F2F6F9]">
       <Header />
       <Carousel />
+      <TechNodes />
       <InsightOverview />
-      <RMapOverview />
-      <RetailAnalysis />
-      <DataEngineering />
-      <AllProducts />
-      <AllResources />
-      <ContactForm />
-      <OurLocation />
+      {/* <RMapOverview /> */}
+      {/* <RetailAnalysis /> */}
+      {/* <DataEngineering /> */}
+      {/* <AllProducts /> */}
+      {/* <AllResources /> */}
+      {/* <ContactForm /> */}
+      {/* <OurLocation /> */}
     </div>
   );
 };
