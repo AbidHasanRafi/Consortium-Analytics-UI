@@ -3,14 +3,14 @@ import img from "../../assets/analytics.svg";
 
 const TechNodes = () => {
   return (
-    <section id="expertise" className="bg-gray-900 py-16 px-6 md:px-12">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row gap-10 items-center justify-between">
+    <section id="expertise" className="bg-gray-900 py-16 px-6 sm:px-8 lg:px-24">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col-reverse md:flex-row gap-10 items-center justify-between">
           <div className="flex-1 space-y-6 pt-4 order-2 md:order-1">
-            <h2 className="text-2xl md:text-3xl font-bold font-mont text-white mb-4">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold font-mont text-white mb-6">
               Data-driven analytics with no limits
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-200 text-justify">
+            <p className="text-base sm:text-lg md:text-xl text-gray-200 text-justify leading-relaxed">
               Consortium Analytics leverages powerful tools like Google Cloud,
               Azure, AWS, Microsoft Power BI, Tableau, Snowflake, Google
               Analytics, SAS, Python, and R to enhance your data analysis and
@@ -23,8 +23,8 @@ const TechNodes = () => {
               and education.
             </p>
           </div>
-          <div className="w-full md:w-1/2 flex items-center justify-center order-1 md:order-2">
-            <img src={img} alt="Data Engineering" />
+          <div className="w-full md:w-2/3 lg:w-2/3 xl:w-1/2 flex items-center justify-center order-1 md:order-2">
+            <img src={img} alt="Data Engineering" className="w-full h-auto" />
           </div>
         </div>
       </div>

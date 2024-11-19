@@ -62,8 +62,8 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="max-w-full bg-gray-900 px-40 mx-auto p-6 rounded-lg shadow-md">
-      <h2 className="text-4xl font-abel font-bold text-center text-white mb-6">
+    <section className="max-w-full bg-gray-900 font-inter px-6 sm:px-12 lg:px-40 mx-auto p-6 py-16 lg:py-32 shadow-md">
+      <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-6">
         Request a demo
       </h2>
       <p className="text-lg text-center mb-8">
@@ -72,7 +72,7 @@ const ContactForm = () => {
       </p>
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {/* First Name */}
           <div>
             <label className="block text-gray-500">First Name*</label>
@@ -256,8 +256,8 @@ const ContactForm = () => {
           </div>
 
           {/* Consent and Request Demo Button */}
-          <div className="col-span-1 md:col-span-3 flex justify-between items-center pt-4 mt-4">
-            <div className="flex-1">
+          <div className="col-span-1 md:col-span-3 flex flex-col md:flex-row justify-between items-center pt-4 mt-4">
+            <div className="flex-1 mb-4 md:mb-0">
               <label className="flex items-center">
                 <input
                   type="checkbox"
@@ -279,7 +279,7 @@ const ContactForm = () => {
             </div>
             <button
               type="submit"
-              className="w-48 bg-blue-600 text-white p-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+              className="w-full md:w-48 bg-blue-600 text-white p-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
             >
               Request a Demo
             </button>

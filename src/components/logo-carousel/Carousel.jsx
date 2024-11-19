@@ -1,21 +1,23 @@
 import Slider from "react-slick";
-import img1 from "../../assets/carousel-logos/01.jpeg";
-import img2 from "../../assets/carousel-logos/02.png";
-import img3 from "../../assets/carousel-logos/03.png";
-import img4 from "../../assets/carousel-logos/04.png";
-import img5 from "../../assets/carousel-logos/05.png";
-import img6 from "../../assets/carousel-logos/06.png";
-import img7 from "../../assets/carousel-logos/07.png";
-import img8 from "../../assets/carousel-logos/08.png";
-import img9 from "../../assets/carousel-logos/09.png";
-import img10 from "../../assets/carousel-logos/10.png";
-import img11 from "../../assets/carousel-logos/11.png";
-import img12 from "../../assets/carousel-logos/12.png";
-import img13 from "../../assets/carousel-logos/13.png";
-import img14 from "../../assets/carousel-logos/14.png";
-import img15 from "../../assets/carousel-logos/15.png";
-import img16 from "../../assets/carousel-logos/16.jpeg";
-import img17 from "../../assets/carousel-logos/17.png";
+import img1 from "../../assets/carousel-logos/1.svg";
+import img2 from "../../assets/carousel-logos/2.svg";
+import img3 from "../../assets/carousel-logos/3.svg";
+import img4 from "../../assets/carousel-logos/4.svg";
+import img5 from "../../assets/carousel-logos/5.svg";
+import img6 from "../../assets/carousel-logos/6.svg";
+import img7 from "../../assets/carousel-logos/7.svg";
+import img8 from "../../assets/carousel-logos/8.svg";
+import img9 from "../../assets/carousel-logos/9.svg";
+import img10 from "../../assets/carousel-logos/10.svg";
+import img11 from "../../assets/carousel-logos/11.svg";
+import img12 from "../../assets/carousel-logos/12.svg";
+import img13 from "../../assets/carousel-logos/13.svg";
+import img14 from "../../assets/carousel-logos/14.svg";
+import img15 from "../../assets/carousel-logos/15.svg";
+import img16 from "../../assets/carousel-logos/16.svg";
+import img17 from "../../assets/carousel-logos/17.svg";
+import img18 from "../../assets/carousel-logos/18.svg";
+import img19 from "../../assets/carousel-logos/19.svg";
 
 const images = [
   img1,
@@ -35,6 +37,8 @@ const images = [
   img15,
   img16,
   img17,
+  img18,
+  img19,
 ];
 
 const Carousel = () => {
@@ -74,8 +78,8 @@ const Carousel = () => {
   };
 
   return (
-    <div className="carousel-container relative overflow-hidden w-full h-[150px] md:h-[200px] bg-gray-900">
-      <p className="text-center text-white mb-4 md:mb-10">
+    <div className="carousel-container relative overflow-hidden w-full h-[220px] md:h-[300px] bg-gray-900">
+      <p className="text-center text-white mb-3 md:mb-5">
         Access more than 50,000 datasets from trusted sources
       </p>
       <Slider {...settings}>
@@ -84,7 +88,7 @@ const Carousel = () => {
             <img
               src={src}
               alt={`carousel-item-${index}`}
-              className="w-[80px] h-[40px] sm:w-[95px] sm:h-[50px] md:w-[130px] md:h-[60px] object-contain mx-0.5"
+              className="w-[250px] h-[125px] sm:w-[300px] sm:h-[150px] md:w-[350px] md:h-[175px] object-contain"
             />
           </div>
         ))}

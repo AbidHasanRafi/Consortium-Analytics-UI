@@ -1,7 +1,5 @@
-// AllProducts.js
-import React, { useRef } from "react";
+import React from "react";
 import Slider from "./Slider";
-import { motion, useInView } from "framer-motion";
 import {
   MdOutlineAnalytics,
   MdOutlineAttachMoney,
@@ -49,22 +47,13 @@ const cards = [
 ];
 
 function AllProducts() {
-  const headerRef = useRef(null);
-  const inView = useInView(headerRef, { once: true, margin: "-50px" });
-
   return (
-    <div className="w-full bg-gray-900 py-10">
-      <motion.div
-        className="text-center mb-12"
-        ref={headerRef}
-        initial={{ opacity: 0, y: -50 }}
-        animate={inView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
-        <h2 className="text-4xl font-bold font-abel text-white mb-4 py-5">
+    <div className="w-full bg-gray-900 py-16 md:py-32 px-4 sm:px-8 md:px-16 lg:px-24 mt-10 lg:mt-20">
+      <div className="text-center mb-12">
+        <h2 className="text-2xl md:text-4xl font-bold font-mont text-white mb-4 py-5">
           Available Solutions
         </h2>
-      </motion.div>
+      </div>
       <Slider cards={cards} />
     </div>
   );

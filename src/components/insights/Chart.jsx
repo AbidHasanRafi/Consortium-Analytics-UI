@@ -23,7 +23,7 @@ const data = [
 
 const Chart = () => {
   return (
-    <div className="w-full max-w-7xl mx-auto mt-10 lg:mt-0 py-0 lg:py-6 px-0 lg:px-8">
+    <div className="w-full mx-auto">
       <h2 className="text-center mb-6 text-lg sm:text-xl font-semibold text-gray-900">
         Product Performance Analytics
       </h2>
@@ -42,31 +42,30 @@ const Chart = () => {
           <YAxis />
           <Tooltip />
           <Legend />
+          {/* Define the gradients just once */}
           <defs>
             <linearGradient id="gradientArea" x1="0%" y1="0%" x2="100%" y2="0%">
               <stop offset="0%" stopColor="#2980B9" stopOpacity={0.8} />
               <stop offset="100%" stopColor="#2980B9" stopOpacity={0.8} />
             </linearGradient>
+            <linearGradient id="gradientBar" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#16A085" stopOpacity={0.8} />
+              <stop offset="100%" stopColor="#1ABC9C" stopOpacity={0.8} />
+            </linearGradient>
+            <linearGradient id="gradientLine" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#8E44AD" stopOpacity={0.8} />
+              <stop offset="100%" stopColor="#9B59B6" stopOpacity={0.8} />
+            </linearGradient>
           </defs>
+
+          {/* Use the gradients */}
           <Area
             type="monotone"
             dataKey="rating"
             fill="url(#gradientArea)"
             stroke="url(#gradientArea)"
           />
-          <defs>
-            <linearGradient id="gradientBar" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#16A085" stopOpacity={0.8} />
-              <stop offset="100%" stopColor="#1ABC9C" stopOpacity={0.8} />
-            </linearGradient>
-          </defs>
           <Bar dataKey="reviews" barSize={20} fill="url(#gradientBar)" />
-          <defs>
-            <linearGradient id="gradientLine" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#8E44AD" stopOpacity={0.8} />
-              <stop offset="100%" stopColor="#9B59B6" stopOpacity={0.8} />
-            </linearGradient>
-          </defs>
           <Line type="monotone" dataKey="sales" stroke="url(#gradientLine)" />
         </ComposedChart>
       </ResponsiveContainer>

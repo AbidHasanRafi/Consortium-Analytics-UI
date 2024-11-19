@@ -1,14 +1,10 @@
-// Slider.js
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { MdOutlineAnalytics } from "react-icons/md"; // Example icon for analytics
 
 const Slider = ({ cards }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Automatic sliding (change card every 3 seconds)
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
@@ -61,7 +57,7 @@ const Slider = ({ cards }) => {
       {/* Left arrow button */}
       <button
         onClick={handlePrev}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-3xl z-10 p-2 rounded-full"
+        className="absolute left-4 sm:left-6 top-1/2 transform -translate-y-1/2 text-white text-3xl z-10 rounded-full"
       >
         <SlArrowLeft />
       </button>
@@ -85,7 +81,7 @@ const Slider = ({ cards }) => {
               initial={position}
               animate={position}
               exit="hidden"
-              className="absolute w-64 h-80 rounded-lg shadow-lg p-6 flex flex-col justify-between"
+              className="absolute w-64 h-80 rounded-lg shadow-lg p-6 flex flex-col justify-between sm:w-72 md:w-80 lg:w-96 xl:w-1/4"
               style={{
                 background: "rgba(255, 255, 255, 0.1)",
                 backdropFilter: "blur(10px)",
@@ -94,9 +90,7 @@ const Slider = ({ cards }) => {
             >
               {/* Card Title with Icon */}
               <div className="text-center">
-                <div className="text-3xl text-gradient mb-2">
-                  {card.icon || <MdOutlineAnalytics />} {/* Default icon */}
-                </div>
+                <div className="text-3xl text-gradient mb-2">{card.icon}</div>
                 <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-500">
                   {card.title}
                 </h3>
@@ -130,7 +124,7 @@ const Slider = ({ cards }) => {
       {/* Right arrow button */}
       <button
         onClick={handleNext}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-3xl z-10 p-2 rounded-full"
+        className="absolute right-4 sm:right-6 top-1/2 transform -translate-y-1/2 text-white text-3xl z-10 rounded-full"
       >
         <SlArrowRight />
       </button>
