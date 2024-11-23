@@ -70,25 +70,25 @@ const Footer = () => {
           <div className="mt-4 flex space-x-4">
             <a
               href="#"
-              className="text-gray-400 hover:text-gray-800 transition"
+              className="text-gray-600 hover:text-gray-800 transition"
             >
               <FaFacebook size={20} />
             </a>
             <a
               href="#"
-              className="text-gray-400 hover:text-gray-800 transition"
+              className="text-gray-600 hover:text-gray-800 transition"
             >
               <FaTwitter size={20} />
             </a>
             <a
               href="#"
-              className="text-gray-400 hover:text-gray-800 transition"
+              className="text-gray-600 hover:text-gray-800 transition"
             >
               <FaLinkedin size={20} />
             </a>
             <a
               href="#"
-              className="text-gray-400 hover:text-gray-800 transition"
+              className="text-gray-600 hover:text-gray-800 transition"
             >
               <FaInstagram size={20} />
             </a>

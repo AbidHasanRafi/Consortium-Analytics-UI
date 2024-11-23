@@ -1,44 +1,49 @@
 import React from "react";
+import { HiArrowLongRight } from "react-icons/hi2";
 import img from "../../../../../../assets/pages/finance-services/f-services.svg";
 
 const FsHeader = () => {
   return (
-    <div className="relative h-screen">
-      {/* Background Pattern */}
-      <div className="absolute inset-0">
-        <div className="relative h-full w-full bg-slate-950 [&>div]:absolute [&>div]:bottom-[-20%] [&>div]:left-0 [&>div]:right-0 [&>div]:top-auto [&>div]:h-[500px] [&>div]:w-[500px] [&>div]:rounded-full [&>div]:bg-[radial-gradient(circle_farthest-side,rgba(0,128,128,0.2),rgba(255,255,255,0))]">
-          <div></div>
-        </div>
-      </div>
-
+    <div className="w-full min-h-screen bg-slate-950 flex items-center">
       {/* Header Content */}
-      <div className="relative z-10 h-full w-full mx-auto py-12 sm:py-16 lg:py-24 px-6 sm:px-8 lg:pl-24 lg:pr-10">
-        <div className="grid h-full items-center gap-8 lg:grid-cols-2">
-          {/* Text Section */}
-          <div className="text-start text-white">
-            <h1 className="mb-4 text-3xl font-semibold tracking-tight sm:text-5xl">
-              Empowering Financial Success Through Data Insights
-            </h1>
-            <p className="mb-4 text-lg text-slate-300">
-              Financial performance is the lifeblood of any business. The
-              Financial Intelligence Dashboard equips businesses with the tools
-              they need to monitor revenue streams, track expenses, and identify
-              profitable opportunities. With clear, actionable insights, our
-              platform helps clients optimize budgets, improve strategies, and
-              achieve long-term financial success.
-            </p>
-            <button className="rounded-lg px-6 py-3 font-medium bg-sky-400 text-slate-900 hover:bg-sky-300">
-              Request a Demo
-            </button>
-          </div>
-
+      <div className="w-full mx-auto px-4 sm:px-12 lg:px-24 py-10 sm:py-16 lg:py-20">
+        <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* Image Section */}
-          <div className="flex justify-center">
+          <div className="w-full flex justify-center lg:order-2">
             <img
               src={img}
-              alt="Financial Intelligence"
-              className="w-full max-w-lg rounded-lg shadow-lg"
+              alt="Real Estate Analytics"
+              className="w-full max-w-[350px] sm:max-w-[450px] md:max-w-[500px] object-contain rounded-lg shadow-lg"
             />
+          </div>
+
+          {/* Text Section */}
+          <div className="text-white text-justify lg:order-1">
+            <h1 className="text-2xl font-semibold mb-4 lg:text-4xl leading-tight">
+              Empowering Financial Success Through Data Insights
+            </h1>
+            <p className="text-base sm:text-lg text-slate-300 mb-4 leading-relaxed">
+              Financial performance is the lifeblood of any business. The{" "}
+              <span className="font-semibold text-sky-400">
+                Financial Intelligence Dashboard
+              </span>{" "}
+              equips businesses with the tools they need to monitor revenue
+              streams, track expenses, and identify profitable opportunities.
+              With clear, actionable insights, our platform helps clients
+              optimize budgets, improve strategies, and achieve long-term
+              financial success.
+            </p>
+            <div className="mt-8 sm:mt-12 text-start">
+              <div className="inline-block rounded-lg border-2 p-[2px] border-transparent bg-clip-padding">
+                <a
+                  href="#"
+                  className="flex items-center text-blue-400 text-sm font-semibold py-2 gap-2 bg-clip-text hover:border-b hover:border-b-blue-500 transition duration-300 transform"
+                >
+                  <p className="text-xs sm:text-sm">Discover More</p>
+                  <HiArrowLongRight className="text-base font-semibold" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
