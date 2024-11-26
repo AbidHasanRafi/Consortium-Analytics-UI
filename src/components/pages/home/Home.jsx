@@ -3,7 +3,6 @@ import Header from "../../header/Header";
 import InsightOverview from "../../insights/InsightOverview";
 import AllProducts from "../../all-products/AllProducts";
 import AllResources from "../../all-resources/AllResources";
-import OurLocation from "../../our-location/OurLocation";
 import Carousel from "../../logo-carousel/Carousel";
 import DataEngineering from "../../data-engineering/DataEngineering";
 import ContactForm from "../../contact-form/ContactForm";
@@ -24,7 +23,6 @@ const Home = () => {
       <AllProducts />
       <AllResources />
       <ContactForm />
-      {/* <OurLocation /> */}
     </div>
   );
 };

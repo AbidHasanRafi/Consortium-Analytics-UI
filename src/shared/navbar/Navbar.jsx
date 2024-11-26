@@ -1,15 +1,20 @@
 import { useState, useEffect, useRef } from "react";
-import { FaAngleRight } from "react-icons/fa";
+import { FaAngleRight, FaAngleDown } from "react-icons/fa";
 import { menuData } from "./menuData";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [mobileActiveSubMenu, setMobileActiveSubMenu] = useState(null);
   const [activeSubMenu, setActiveSubMenu] = useState(null);
   const [scrolled, setScrolled] = useState(false);
   const timeoutRef = useRef(null);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleMobileSubMenuToggle = (menuName) => {
+    setMobileActiveSubMenu((prev) => (prev === menuName ? null : menuName));
   };
 
   const handleSubMenuOpen = (menuName) => {
@@ -75,7 +80,6 @@ const Navbar = () => {
                   {menu.submenu && (
                     <FaAngleRight className="ml-1 w-4 h-4 transform transition-transform duration-300 group-hover:rotate-90" />
                   )}
-                  {/* Underline animation for parent menu items only */}
                   <span className="absolute left-0 bottom-0 w-full h-[2px] bg-blue-400 scale-x-0 transform origin-center transition-all duration-300 group-hover:scale-x-100"></span>
                 </a>
 
@@ -86,7 +90,6 @@ const Navbar = () => {
                     onMouseEnter={() => handleSubMenuOpen(menu.name)}
                     onMouseLeave={handleSubMenuClose}
                   >
-                    {/* Expertise Section */}
                     <div className="grid grid-cols-2 gap-6">
                       {menu.submenu.map((sub, index) => (
                         <a
@@ -100,7 +103,7 @@ const Navbar = () => {
                       ))}
                     </div>
 
-                    {/* Consortium Analytics for Section */}
+                    {/* Consortium Analytics Section */}
                     {menu.consortium && (
                       <div className="mt-6">
                         <h4 className="text-blue-400 text-sm uppercase mb-5 border-b-2 border-blue-400 pb-2">
@@ -159,6 +162,45 @@ const Navbar = () => {
             </button>
           </div>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden bg-gray-800 text-white p-4 mt-2">
+            <ul>
+              {menuData.map((menu) => (
+                <li key={menu.name} className="mb-4">
+                  <div
+                    onClick={() => handleMobileSubMenuToggle(menu.name)}
+                    className="flex items-center justify-between cursor-pointer text-base font-bold hover:text-blue-400"
+                  >
+                    {menu.name}
+                    {menu.submenu && (
+                      <FaAngleDown
+                        className={`transition-transform ${
+                          mobileActiveSubMenu === menu.name ? "rotate-180" : ""
+                        }`}
+                      />
+                    )}
+                  </div>
+                  {menu.submenu && mobileActiveSubMenu === menu.name && (
+                    <ul className="mt-2 ml-4">
+                      {menu.submenu.map((sub, index) => (
+                        <li key={index} className="mb-2">
+                          <a
+                            href={sub.link}
+                            className="block text-sm text-gray-300 hover:text-blue-400"
+                          >
+                            {sub.name}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </nav>
   );

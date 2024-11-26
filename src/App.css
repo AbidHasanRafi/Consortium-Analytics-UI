@@ -3,3 +3,34 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Ensure labels are aligned initially */
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+  top: -8px;
+  font-size: 0.875rem;
+  color: #4b5563;
+  opacity: 1;
+}
+
+/* Label on initial input focus */
+input:focus ~ label {
+  transform: translateY(-50%) scale(0.9);
+  transition: all 0.2s ease;
+}
+
+/* Placeholder behavior for input with value or focused */
+input:not(:placeholder-shown) ~ label {
+  transform: translateY(+30%) scale(0.9);
+  transition: all 0.3s ease;
+  color: #4b5563;
+}
+
+/* Adjust styles when the input is focused */
+input:focus {
+  border-color: #4b5563;
+}
+
+input:focus ~ label {
+  color: #4b5563;
+}

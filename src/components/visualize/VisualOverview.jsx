@@ -25,7 +25,7 @@ const VisualOverview = () => {
               <p className="text-xs font-semibold">Analytics</p>
             </div>
             <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-4">
-              Advanced analytics with an interactive workflow tool
+              Advanced Analytics with An Interactive Workflow Tool
             </h2>
             <p className="text-gray-900 text-lg sm:text-xl">
               Effortlessly create and manage sophisticated data processing

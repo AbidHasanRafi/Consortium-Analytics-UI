@@ -18,10 +18,10 @@ const VisualizationAnalytics = () => {
             <p className="text-3xl sm:text-4xl">
               <VscGraph />
             </p>
-            <p className="text-xs font-semibold">Analytics</p>
+            <p className="text-xs font-semibold">Visualization</p>
           </div>
           <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Advanced visualization with an easy-to-use design interface
+            Advanced Visualization with An Easy-to-use Design Interface
           </h2>
           <p className="text-gray-900 text-lg sm:text-xl">
             Effortlessly create and manage complex data workflows with a highly
