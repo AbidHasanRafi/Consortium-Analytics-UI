@@ -26,6 +26,10 @@ const ContactForm = () => {
     { value: "postgresql", label: "PostgreSQL" },
     { value: "mysql", label: "MySQL" },
     { value: "mongodb", label: "MongoDB" },
+    { value: "azure", label: "Azure" },
+    { value: "amazon", label: "Amazon" },
+    { value: "bigquery", label: "BigQuery" },
+    { value: "dropbox", label: "Dropbox" },
     { value: "others", label: "Others" },
   ];
 
@@ -167,7 +171,7 @@ const ContactForm = () => {
           ))}
 
           {/* Dropdown Fields */}
-          {/* Country Selection */}
+          {/* Country Input */}
           <div className="flex flex-col">
             <Select
               value={formData.country}
@@ -186,16 +190,16 @@ const ContactForm = () => {
                 }),
                 singleValue: (base) => ({
                   ...base,
-                  color: "#000", // Black text for selected value
+                  color: "#000",
                 }),
                 menu: (base) => ({
                   ...base,
                   backgroundColor: "#fff",
-                  color: "#000", // Black text for menu items
+                  color: "#000",
                 }),
                 menuList: (base) => ({
                   ...base,
-                  color: "#000", // Black text for menu items
+                  color: "#000",
                 }),
                 placeholder: (base) => ({
                   ...base,
@@ -257,11 +261,11 @@ const ContactForm = () => {
                 menu: (base) => ({
                   ...base,
                   backgroundColor: "#fff",
-                  color: "#000", // Black text for menu items
+                  color: "#000",
                 }),
                 menuList: (base) => ({
                   ...base,
-                  color: "#000", // Black text for menu items
+                  color: "#000",
                 }),
                 placeholder: (base) => ({
                   ...base,
@@ -297,11 +301,11 @@ const ContactForm = () => {
                 menu: (base) => ({
                   ...base,
                   backgroundColor: "#fff",
-                  color: "#000", // Black text for menu items
+                  color: "#000",
                 }),
                 menuList: (base) => ({
                   ...base,
-                  color: "#000", // Black text for menu items
+                  color: "#000",
                 }),
                 placeholder: (base) => ({
                   ...base,

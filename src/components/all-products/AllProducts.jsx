@@ -1,48 +1,72 @@
 import React from "react";
 import Slider from "./Slider";
 import {
-  MdOutlineAnalytics,
-  MdOutlineAttachMoney,
-  MdOutlineHealthAndSafety,
-  MdOutlineLocationCity,
-  MdOutlineLocalShipping,
-} from "react-icons/md";
+  FaStethoscope,
+  FaTruckMoving,
+  FaUniversity,
+  FaShoppingCart,
+  FaBriefcase,
+} from "react-icons/fa";
+import { MdRealEstateAgent } from "react-icons/md";
+import { RiGovernmentFill } from "react-icons/ri";
+import { GiMedallist } from "react-icons/gi";
 
 const cards = [
+  {
+    title: "Real Estate",
+    description:
+      "Unlock the potential of real estate with data insights for better investments and management.",
+    link: "https://example.com/real-estate",
+    icon: <MdRealEstateAgent />,
+  },
   {
     title: "Retail",
     description:
       "Transform retail with data-driven insights to enhance customer experience and drive sales.",
     link: "https://example.com/retail",
-    icon: <MdOutlineAnalytics />,
+    icon: <FaShoppingCart />,
   },
   {
-    title: "Finance",
+    title: "Financial Services",
     description:
       "Leverage analytics to make data-backed financial decisions and optimize investments.",
-    link: "https://example.com/finance",
-    icon: <MdOutlineAttachMoney />,
+    link: "https://example.com/finance-service",
+    icon: <FaBriefcase />,
   },
   {
     title: "Healthcare",
     description:
       "Empower healthcare providers with insights that improve patient outcomes and efficiency.",
     link: "https://example.com/healthcare",
-    icon: <MdOutlineHealthAndSafety />,
+    icon: <FaStethoscope />,
   },
   {
-    title: "Cities and Government",
+    title: "Cities and Governance",
     description:
       "Use analytics to build smarter cities and improve public services for citizens.",
-    link: "https://example.com/cities-government",
-    icon: <MdOutlineLocationCity />,
+    link: "https://example.com/city-governance",
+    icon: <RiGovernmentFill />,
   },
   {
     title: "Transport & Logistics",
     description:
       "Optimize logistics and transportation with data insights for streamlined operations.",
     link: "https://example.com/transport-logistics",
-    icon: <MdOutlineLocalShipping />,
+    icon: <FaTruckMoving />,
+  },
+  {
+    title: "Sports",
+    description:
+      "Revolutionize sports with performance analytics, talent identification, and audience engagement.",
+    link: "https://example.com/sports",
+    icon: <GiMedallist />,
+  },
+  {
+    title: "Education",
+    description:
+      "Empower education with tools and insights to enhance learning outcomes and accessibility.",
+    link: "https://example.com/education",
+    icon: <FaUniversity />,
   },
 ];
 
