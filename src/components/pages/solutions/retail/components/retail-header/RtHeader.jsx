@@ -24,15 +24,12 @@ const RtHeader = () => {
             </h1>
             <p className="text-base sm:text-lg text-slate-300 mb-4 leading-relaxed">
               In today’s fast-evolving retail landscape, staying ahead requires
-              more than intuition—it demands actionable insights. The{" "}
-              <span className="font-semibold text-sky-400">
-                Retail Intelligence Dashboard
-              </span>{" "}
-              empowers businesses to harness the power of data to monitor
-              performance, optimize logistics, and align strategies with
-              customer needs. From deal pipeline analysis to regional sales
-              trends, our platform is designed to deliver unparalleled value to
-              retail businesses.
+              more than intuition—it demands actionable insights. The Retail
+              Intelligence Dashboard empowers businesses to harness the power of
+              data to monitor performance, optimize logistics, and align
+              strategies with customer needs. From deal pipeline analysis to
+              regional sales trends, our platform is designed to deliver
+              unparalleled value to retail businesses.
             </p>
             <div className="mt-8 sm:mt-12 text-start">
               <div className="inline-block rounded-lg border-2 p-[2px] border-transparent bg-clip-padding">

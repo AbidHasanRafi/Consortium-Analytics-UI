@@ -51,14 +51,14 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
-            <a href="#">
+            <a href="/">
               <img
                 className="w-14"
                 src="/consortium-analytics.svg"
                 alt="Consortium Analytics"
               />
             </a>
-            <a href="#" className="w-14 text-xs font-bold text-white ml-2">
+            <a href="/" className="w-14 text-xs font-bold text-white ml-2">
               Consortium Analytics
             </a>
           </div>

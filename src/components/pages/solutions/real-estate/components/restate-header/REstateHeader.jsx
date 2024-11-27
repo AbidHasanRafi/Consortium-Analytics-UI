@@ -1,10 +1,10 @@
 import React from "react";
 import { HiArrowLongRight } from "react-icons/hi2";
-import img from "../../../../../../assets/pages/real-estate/estate.svg";
+import img from "../../../../../../assets/pages/real-estate/estate.gif";
 
 const REstateHeader = () => {
   return (
-    <div className="w-full min-h-screen bg-slate-950 flex items-center">
+    <div className="w-full min-h-screen bg-[#212A31] flex items-center">
       {/* Header Content */}
       <div className="w-full mx-auto px-4 sm:px-12 lg:px-24 py-10 sm:py-16 lg:py-20">
         <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -13,12 +13,12 @@ const REstateHeader = () => {
             <img
               src={img}
               alt="Real Estate Analytics"
-              className="w-full max-w-[350px] sm:max-w-[450px] md:max-w-[500px] object-contain rounded-lg shadow-lg"
+              className="w-full max-w-[350px] sm:max-w-[450px] md:max-w-[500px] object-contain"
             />
           </div>
 
           {/* Text Section */}
-          <div className="text-white text-justify lg:order-1">
+          <div className="text-white lg:order-1">
             <h1 className="text-2xl font-semibold mb-4 lg:text-4xl leading-tight">
               Real Estate Intelligence
             </h1>
@@ -27,9 +27,7 @@ const REstateHeader = () => {
               operations with cutting-edge spatial analytics. Whether you're
               focused on commercial or residential properties, Consortium
               Analytics empowers real estate firms, investors, and consultants
-              to gain deeper insights into the{" "}
-              <span className="font-semibold text-sky-400">why</span> behind the{" "}
-              <span className="font-semibold text-sky-400">where</span>.
+              to gain deeper insights into the why behind the where.
             </p>
             <p className="text-base sm:text-lg text-slate-300 mb-6 leading-relaxed">
               With our advanced tools and data-driven solutions, we help you

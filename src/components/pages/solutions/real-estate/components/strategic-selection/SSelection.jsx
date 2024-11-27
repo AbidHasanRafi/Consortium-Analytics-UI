@@ -1,6 +1,7 @@
 import React from "react";
 import img from "../../../../../../assets/pages/real-estate/smart-location.jpg";
 import { HiArrowLongRight } from "react-icons/hi2";
+import { SiteGraph } from "./SiteGraph";
 
 const SSelection = () => {
   return (
@@ -9,26 +10,27 @@ const SSelection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-9 items-center justify-between">
           {/* Left Section with White Background (Text) */}
           <div className="bg-[#F2F6F9] col-span-4 flex justify-center items-center">
-            <img
+            {/* <img
               className="w-full h-auto"
               src={img}
               alt="Property Investment Insights"
-            />
+            /> */}
+            <SiteGraph />
           </div>
 
           {/* Right Section with Image */}
           <div className="bg-white col-span-5 flex flex-col justify-center px-6 sm:px-8 lg:px-14 py-8 sm:py-12">
             <section className="mx-0 lg:mx-16 my-12">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 text-left">
-                Strategic Site Selection
+                Site Selection
               </h2>
-              <p className="text-gray-900 text-justify text-lg sm:text-xl">
+              <p className="text-gray-900 text-lg sm:text-xl">
                 Smart site planning is critical for commercial real estate
                 developers. Leverage multiple data streams to make precise site
                 selection decisions, understand trade areas, and evaluate
                 catchment zones.
               </p>
-              <p className="text-gray-900 text-justify text-lg sm:text-xl">
+              <p className="text-gray-900 text-lg sm:text-xl">
                 Whether planning for retail outlets, corporate offices, or
                 industrial facilities, Consortium Analytics empowers you to
                 justify pricing, optimize layouts, and meet client needs. With

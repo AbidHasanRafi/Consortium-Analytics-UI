@@ -129,13 +129,13 @@ const ContactForm = () => {
       <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-6">
         Request a Demo
       </h2>
-      <p className="text-lg text-center mb-8">
+      <p className="text-lg text-white text-center mb-8">
         Schedule a 20-minute meeting with our experts to understand how you can
         use spatial analysis in your organization.
       </p>
 
       <form onSubmit={handleSubmit} className="space-y-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7">
           {/* Standard Input Fields */}
           {[
             { id: "firstName", label: "First Name*", type: "text" },
@@ -149,7 +149,7 @@ const ContactForm = () => {
                 type={type}
                 value={formData[id]}
                 onChange={(e) => handleChange(id, e.target.value)}
-                className={`peer w-full bg-gray-900 text-white border p-3 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-500`}
+                className={`peer w-full bg-gray-900 text-white border p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500`}
                 placeholder=" "
               />
               <label
@@ -180,7 +180,7 @@ const ContactForm = () => {
                   backgroundColor: "#1a202c",
                   borderColor: "white",
                   color: "white",
-                  borderRadius: "0.1rem",
+                  borderRadius: "0.3rem",
                   height: "45px",
                   padding: "0.1rem",
                 }),
@@ -218,7 +218,7 @@ const ContactForm = () => {
                 backgroundColor: "#1a202c",
                 color: "white",
                 border: "1px solid white",
-                borderRadius: "0.1rem",
+                borderRadius: "0.3rem",
                 height: "45px",
                 width: "100%",
               }}
@@ -246,7 +246,7 @@ const ContactForm = () => {
                   backgroundColor: "#1a202c",
                   borderColor: "white",
                   color: "white",
-                  borderRadius: "0.1rem",
+                  borderRadius: "0.3rem",
                   height: "45px",
                   padding: "0.1rem",
                 }),
@@ -286,7 +286,7 @@ const ContactForm = () => {
                   backgroundColor: "#1a202c",
                   borderColor: "white",
                   color: "white",
-                  borderRadius: "0.1rem",
+                  borderRadius: "0.3rem",
                   height: "45px",
                   padding: "0.1rem",
                 }),
@@ -328,7 +328,7 @@ const ContactForm = () => {
                 onChange={() => handleChange("usesGeospatial", "Yes")}
                 className="mr-2"
               />
-              Yes
+              <span className="text-white">Yes</span>
             </label>
             <label className="flex items-center">
               <input
@@ -338,7 +338,7 @@ const ContactForm = () => {
                 onChange={() => handleChange("usesGeospatial", "No")}
                 className="mr-2"
               />
-              No
+              <span className="text-white">No</span>
             </label>
           </div>
           {errors.usesGeospatial && (

@@ -78,7 +78,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="carousel-container relative overflow-hidden w-full h-[160px] bg-gray-900">
+    <div className="carousel-container relative overflow-hidden w-full h-[200px] bg-gray-900">
       <p className="text-center text-white mb-3 md:mb-5">
         Access more than 50,000 datasets from trusted sources
       </p>

@@ -148,14 +148,18 @@ const Footer = () => {
           <h4 className="text-black text-2xl font-bold">Prague</h4>
           <p className="text-center">Chaloupeckého 1916, 160 17 Praha 6</p>
           <p className="text-center">Czech Republic</p>
-          <p className="text-black font-semibold text-sm">+420 722 487 968</p>
+          <p className="text-black font-semibold text-sm">
+            <a href="tel:+420 722 487 968">+420 722 487 968</a>
+          </p>
         </div>
         <div className="flex flex-col items-center sm:items-start space-y-2 px-8 w-full sm:w-auto">
           <img src={icn3} alt="Dhaka" className="w-[50px]" />
           <h4 className="text-black text-2xl font-bold">Dhaka</h4>
-          <p className="text-center">Mirpur 10, 1216 Dhaka</p>
-          <p className="text-center">Bangladesh</p>
-          <p className="text-black font-semibold text-sm">+880 1521 575799</p>
+          <p className="text-center">Block-H, Road-10, Mirpur-2</p>
+          <p className="text-center">Dhaka 1216, Bangladesh</p>
+          <p className="text-black font-semibold text-sm">
+            <a href="tel:+880 1521 575799">+880 1521 575799</a>
+          </p>
         </div>
         <div className="flex flex-col items-center sm:items-start space-y-2 px-8 w-full sm:w-auto">
           <img src={icn2} alt="Berlin" className="w-[50px]" />
@@ -164,7 +168,9 @@ const Footer = () => {
             Bei Jing Shi, Hai Dian Qu, 100811 Beijing
           </p>
           <p className="text-center">China</p>
-          <p className="text-black font-semibold text-sm">+86 188 1090 8097</p>
+          <p className="text-black font-semibold text-sm">
+            <a href="tel:+86 188 1090 8097">+86 188 1090 8097</a>
+          </p>
         </div>
       </div>
 
@@ -173,19 +179,32 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="flex flex-col sm:flex-row justify-between items-center text-gray-900 px-6 py-4 space-y-4 sm:space-y-0">
-        <div className="text-sm">info@consortium-analytics.com</div>
+        <div className="text-sm">
+          <a href="mailto:post.consortium@gmail.com">
+            post.consortium@gmail.com
+          </a>
+        </div>
         <div className="text-center lg:text-start">
           &copy; {new Date().getFullYear()} Consortium Analytics. All rights
           reserved.
         </div>
         <div className="flex space-x-4 text-xl">
-          <a href="#" className="text-gray-800 hover:text-gray-600 transition">
+          <a
+            href="https://www.facebook.com/profile.php?id=61561910832309"
+            className="text-gray-800 hover:text-gray-600 transition"
+          >
             <FaFacebook />
           </a>
-          <a href="#" className="text-gray-800 hover:text-gray-600 transition">
+          <a
+            href="https://www.youtube.com/@ConsortiumAnalytics"
+            className="text-gray-800 hover:text-gray-600 transition"
+          >
             <FaYoutube />
           </a>
-          <a href="#" className="text-gray-800 hover:text-gray-600 transition">
+          <a
+            href="https://www.linkedin.com/company/consortium-analytics/"
+            className="text-gray-800 hover:text-gray-600 transition"
+          >
             <FaLinkedin />
           </a>
         </div>

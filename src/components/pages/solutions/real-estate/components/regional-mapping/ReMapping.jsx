@@ -1,6 +1,7 @@
 import React from "react";
 import img from "../../../../../../assets/pages/real-estate/regional-mapping.jpg";
 import { HiArrowLongRight } from "react-icons/hi2";
+import { OpportunityMappingGraph } from "./OpportunityMappingGraph";
 
 const ReMapping = () => {
   return (
@@ -9,26 +10,27 @@ const ReMapping = () => {
         <div className="grid grid-cols-1 lg:grid-cols-9 items-center justify-between">
           {/* Right Section with Image (Image on top for small screens, right for larger ones) */}
           <div className="bg-[#F2F6F9] col-span-1 lg:col-span-4 flex justify-center items-center order-1 lg:order-2">
-            <img
+            {/* <img
               className="w-full h-auto"
               src={img}
               alt="Property Investment Insights"
-            />
+            /> */}
+            <OpportunityMappingGraph />
           </div>
 
           {/* Left Section with White Background (Text) */}
           <div className="bg-white col-span-1 lg:col-span-5 flex flex-col justify-center px-6 sm:px-8 lg:px-14 py-8 sm:py-12 order-2 lg:order-1">
             <section className="mx-0 lg:mx-16 my-12">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 text-left">
-                Regional Opportunity Mapping
+                Opportunity Mapping
               </h2>
-              <p className="text-gray-900 text-justify text-lg sm:text-xl">
+              <p className="text-gray-900 text-lg sm:text-xl">
                 Trade area insights are key when evaluating mergers,
                 acquisitions, or expansions. With Consortium Analytics, assess
                 how customer bases align with business sites and gauge the
                 impact of potential investments.
               </p>
-              <p className="text-gray-900 text-justify text-lg sm:text-xl">
+              <p className="text-gray-900 text-lg sm:text-xl">
                 From calculating customer density by proximity to exploring
                 untapped opportunities, our tools enable analysts to identify
                 risks and opportunities faster than ever before.

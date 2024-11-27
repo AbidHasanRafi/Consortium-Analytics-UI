@@ -24,7 +24,7 @@ const data = [
 const Chart = () => {
   return (
     <div className="w-full mx-auto">
-      <h2 className="text-center mb-6 text-lg sm:text-xl font-semibold text-gray-900">
+      <h2 className="text-center mb-6 text-lg sm:text-xl font-normal text-gray-900">
         Product Performance Analytics
       </h2>
       <ResponsiveContainer width="100%" height={300} className="sm:h-[380px]">

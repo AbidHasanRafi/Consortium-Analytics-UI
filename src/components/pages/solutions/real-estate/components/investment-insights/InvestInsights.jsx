@@ -1,6 +1,7 @@
 import React from "react";
 import img from "../../../../../../assets/pages/real-estate/invest-insights.jpg";
 import { HiArrowLongRight } from "react-icons/hi2";
+import InvestmentGraph from "./InvestmentGraph";
 
 const InvestInsights = () => {
   return (
@@ -9,27 +10,28 @@ const InvestInsights = () => {
         <div className="grid grid-cols-1 lg:grid-cols-9 items-center justify-between">
           {/* Right Section with Image (Image on top for small screens, right for larger ones) */}
           <div className="bg-[#F2F6F9] col-span-1 lg:col-span-4 flex justify-center items-center order-1 lg:order-2">
-            <img
+            {/* <img
               className="w-full h-auto"
               src={img}
               alt="Property Investment Insights"
-            />
+            /> */}
+            <InvestmentGraph />
           </div>
 
           {/* Left Section with White Background (Text) */}
           <div className="bg-white col-span-1 lg:col-span-5 flex flex-col justify-center px-6 sm:px-8 lg:px-14 py-8 sm:py-12 order-2 lg:order-1">
             <section className="mx-0 lg:mx-16 my-12">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 text-left">
-                Property Investment Insights
+                Investment Insights
               </h2>
-              <p className="text-gray-900 text-justify text-lg sm:text-xl">
+              <p className="text-gray-900 text-lg sm:text-xl">
                 Real estate success lies in understanding not just where a
                 property is located but why it holds value. Consortium Analytics
                 equips you with tools to uncover hidden investment
                 opportunities, whether you’re analyzing co-working spaces, data
                 centers, or shopping mall locations.
               </p>
-              <p className="text-gray-900 text-justify text-lg sm:text-xl">
+              <p className="text-gray-900 text-lg sm:text-xl">
                 By integrating spatial variables and predictive analytics into
                 your investment strategy, you can pinpoint the factors that make
                 properties attractive and maximize returns on your portfolio.
