@@ -77,33 +77,6 @@ const rows = [
     30,
     "StrategyDevelopment",
   ],
-  [
-    "DataValidation",
-    "Validate market data",
-    new Date(2024, 11, 16),
-    new Date(2024, 11, 20),
-    null,
-    40,
-    "Survey,CompetitorAnalysis",
-  ],
-  [
-    "LegalReview",
-    "Review legal requirements",
-    new Date(2024, 11, 21),
-    new Date(2024, 11, 25),
-    null,
-    10,
-    "FinancialPlanning",
-  ],
-  [
-    "TeamSetup",
-    "Set up operational team",
-    new Date(2024, 11, 26),
-    new Date(2024, 11, 30),
-    null,
-    20,
-    "Execution,StakeholderConsult",
-  ],
 ];
 
 // Combine columns and rows
@@ -116,8 +89,8 @@ export function OpportunityMappingGraph() {
       className="p-0 md:p-10 flex flex-col"
       style={{
         width: "100%",
-        height: "calc(100vh - 230px)", // Adjust the height to allow space for other components and avoid scrollbar
-        overflow: "hidden", // Prevent overflow
+        height: "calc(100vh - 230px)",
+        overflow: "hidden",
       }}
     >
       <h2 className="text-center mb-6 text-lg sm:text-xl font-semibold text-gray-900">
@@ -127,12 +100,12 @@ export function OpportunityMappingGraph() {
         <Chart
           chartType="Gantt"
           width="100%"
-          height="100%" // Now the height should take up the remaining space within the parent
+          height="100%"
           data={data}
           options={{
             gantt: {
               trackHeight: 30,
-              criticalPathEnabled: true, // Highlights critical tasks
+              criticalPathEnabled: true,
               criticalPathStyle: {
                 stroke: "#e64a19",
                 strokeWidth: 2,

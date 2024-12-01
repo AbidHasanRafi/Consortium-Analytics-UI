@@ -1,53 +1,42 @@
 import React from "react";
-import img from "../../../../../../assets/pages/real-estate/regional-mapping.jpg";
-import { HiArrowLongRight } from "react-icons/hi2";
+import { MdTrendingUp, MdInsights, MdOutlineSavings } from "react-icons/md";
 import MarketTrendsGraph from "./MarketTrendsGraph";
+import TempOne from "../../../../../templates/temp-01/TempOne";
 
 const MTrends = () => {
-  return (
-    <div className="max-w-full">
-      <section id="expertise" className="w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-9 items-center justify-between">
-          {/* Right Section with Image (Image on top for small screens, right for larger ones) */}
-          <div className="bg-[#F2F6F9] col-span-1 lg:col-span-4 flex justify-center items-center order-1 lg:order-2">
-            {/* <img
-              className="w-full h-auto"
-              src={img}
-              alt="Property Investment Insights"
-            /> */}
-            <MarketTrendsGraph />
-          </div>
+  const features = [
+    {
+      icon: <MdTrendingUp />,
+      title: "Price Optimization Models",
+      description:
+        "Leverage advanced analytics to develop data-driven pricing models that ensure properties are priced competitively in line with current market conditions.",
+    },
+    {
+      icon: <MdInsights />,
+      title: "Comparable Market Analysis",
+      description:
+        "Use market data and comparable sales information to assess the fair value of properties, helping to establish optimal pricing strategies.",
+    },
+    {
+      icon: <MdOutlineSavings />,
+      title: "Dynamic Pricing Tools",
+      description:
+        "Integrate dynamic pricing solutions that adjust property prices in real-time based on market conditions, competitor pricing, and consumer demand.",
+    },
+  ];
 
-          {/* Left Section with White Background (Text) */}
-          <div className="bg-white col-span-1 lg:col-span-5 flex flex-col justify-center px-6 sm:px-8 lg:px-14 py-8 sm:py-12 order-2 lg:order-1">
-            <section className="mx-0 lg:mx-16 my-12">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 text-left">
-                Market Trends
-              </h2>
-              <p className="text-gray-900 text-lg sm:text-xl">
-                Take the guesswork out of collecting and analyzing spatial data.
-                With Consortium Analytics, access a comprehensive suite of
-                curated geospatial datasets through our Data Observatory.
-              </p>
-              <p className="text-gray-900 text-lg sm:text-xl">
-                From foot traffic patterns to consumer behavior, our data-driven
-                insights help you understand market trends and make informed
-                decisions.
-              </p>
-              <div className="mt-8 sm:mt-12 text-start">
-                <a
-                  href="#"
-                  className="inline-flex items-center text-blue-600 text-sm font-semibold py-2 gap-2 bg-clip-text hover:border-b hover:border-b-blue-600 transition duration-300 transform"
-                >
-                  <span className="text-xs sm:text-sm">Discover More</span>
-                  <HiArrowLongRight className="text-base font-semibold" />
-                </a>
-              </div>
-            </section>
-          </div>
-        </div>
-      </section>
-    </div>
+  return (
+    <TempOne
+      sectionId="price-strategy"
+      headingIcon={<MdTrendingUp />}
+      headingText="Strategy"
+      title="Pricing Strategy"
+      description={`Setting the right price is crucial for success in real estate investment. Our data enrichment and business intelligence tools analyze market demand, comparable sales, and future price projections to help you determine the optimal pricing strategy. Whether you're pricing individual properties or an entire portfolio, our data-driven approach ensures your pricing aligns with market realities and maximizes returns.`}
+      linkText="Explore More"
+      linkHref="#explore"
+      chartComponent={MarketTrendsGraph}
+      features={features}
+    />
   );
 };
 

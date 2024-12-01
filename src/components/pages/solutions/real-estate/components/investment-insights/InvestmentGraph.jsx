@@ -42,7 +42,7 @@ const InvestmentGraph = () => {
           <Tooltip />
           <Legend />
           {/* Bar chart for investments */}
-          <Bar dataKey="investments" barSize={20} fill="#413ea0" />
+          <Bar dataKey="investments" barSize={20} fill="#17a589" />
           {/* Line chart for returns */}
           <Line
             type="monotone"

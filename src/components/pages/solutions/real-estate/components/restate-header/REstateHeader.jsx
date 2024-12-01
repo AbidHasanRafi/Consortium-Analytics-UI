@@ -1,12 +1,12 @@
 import React from "react";
 import { HiArrowLongRight } from "react-icons/hi2";
-import img from "../../../../../../assets/pages/real-estate/estate.gif";
+import img from "../../../../../../assets/pages/real-estate/estate.png";
 
 const REstateHeader = () => {
   return (
-    <div className="w-full min-h-screen bg-[#212A31] flex items-center">
+    <div className="w-full min-h-screen bg-gradient-to-b from-gray-900 via-[#002430] to-gray-900 flex items-center">
       {/* Header Content */}
-      <div className="w-full mx-auto px-4 sm:px-12 lg:px-24 py-10 sm:py-16 lg:py-20">
+      <div className="w-full mx-auto px-4 sm:px-12 lg:pl-32 lg:pr-5 py-10 sm:py-16 lg:py-20">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* Image Section */}
           <div className="w-full flex justify-center lg:order-2">
@@ -20,19 +20,19 @@ const REstateHeader = () => {
           {/* Text Section */}
           <div className="text-white lg:order-1">
             <h1 className="text-2xl font-semibold mb-4 lg:text-4xl leading-tight">
-              Real Estate Intelligence
+              Real Estate
             </h1>
             <p className="text-base sm:text-lg text-slate-300 mb-4 leading-relaxed">
-              Unlock the full potential of real estate investments and
-              operations with cutting-edge spatial analytics. Whether you're
-              focused on commercial or residential properties, Consortium
-              Analytics empowers real estate firms, investors, and consultants
-              to gain deeper insights into the why behind the where.
-            </p>
-            <p className="text-base sm:text-lg text-slate-300 mb-6 leading-relaxed">
-              With our advanced tools and data-driven solutions, we help you
-              optimize your market analysis, make informed decisions, and stay
-              ahead in an evolving industry.
+              Whether it's commercial or residential, real estate firms, funds,
+              and consultants are taking their market analysis to new heights
+              with advanced technologies. By leveraging data visualization,
+              analytics, data enrichment, and data engineering, we help you
+              explore deeper insights and trends. Our business intelligence
+              solutions, combined with AI and machine learning, provide powerful
+              tools to predict future performance. We also offer custom website
+              and mobile application development, ERP systems, and SaaS products
+              that make real-time market data and insights easily accessible,
+              helping you stay ahead in a competitive market.
             </p>
             <div className="mt-8 sm:mt-12 text-start">
               <div className="inline-block rounded-lg border-2 p-[2px] border-transparent bg-clip-padding">

@@ -1,54 +1,43 @@
 import React from "react";
-import img from "../../../../../../assets/pages/real-estate/pricing-strategy.jpg";
-import { HiArrowLongRight } from "react-icons/hi2";
+import { HiOutlineMap } from "react-icons/hi";
 import PricingStrategyGraph from "./PricingStrategyGraph";
+import TempTwo from "../../../../../templates/temp-02/TempTwo";
 
 const PriceStrategy = () => {
-  return (
-    <div className="max-w-full">
-      <section id="expertise" className="w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-9 items-center justify-between">
-          {/* Left Section with White Background (Text) */}
-          <div className="bg-[#F2F6F9] col-span-4 flex justify-center items-center">
-            {/* <img
-              className="w-full h-auto"
-              src={img}
-              alt="Property Investment Insights"
-            /> */}
-            <PricingStrategyGraph />
-          </div>
+  const features = [
+    {
+      icon: <HiOutlineMap />,
+      title: "Market Demand Analysis",
+      description:
+        "Track shifts in demand, consumer behavior, and economic factors to understand the forces driving the real estate market.",
+    },
+    {
+      icon: <HiOutlineMap />,
+      title: "Pricing and Investment Trends",
+      description:
+        "Monitor changes in property pricing, demand forecasts, and investment flows, helping investors adjust strategies accordingly.",
+    },
+    {
+      icon: <HiOutlineMap />,
+      title: "Predictive Market Forecasting",
+      description:
+        "Use machine learning and AI to predict market trends, allowing real estate professionals to stay ahead of emerging opportunities and risks.",
+    },
+  ];
 
-          {/* Right Section with Image */}
-          <div className="bg-white col-span-5 flex flex-col justify-center px-6 sm:px-8 lg:px-14 py-8 sm:py-12">
-            <section className="mx-0 lg:mx-16 my-12">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 text-left">
-                Pricing Strategy
-              </h2>
-              <p className="text-gray-900 text-lg sm:text-xl">
-                In today’s market, real estate pricing requires precision and
-                strategy. With Consortium Analytics, support your pricing
-                decisions using spatial analysis of foot traffic, transaction
-                data, and other location-based metrics.
-              </p>
-              <p className="text-gray-900 text-lg sm:text-xl">
-                Showcase the growth potential of a property’s location to
-                clients with data-backed insights, accelerating negotiations and
-                closing deals faster.
-              </p>
-              <div className="mt-8 sm:mt-12 text-start">
-                <a
-                  href="#"
-                  className="inline-flex items-center text-blue-600 text-sm font-semibold py-2 gap-2 bg-clip-text hover:border-b hover:border-b-blue-600 transition duration-300 transform"
-                >
-                  <span className="text-xs sm:text-sm">Discover More</span>
-                  <HiArrowLongRight className="text-base font-semibold" />
-                </a>
-              </div>
-            </section>
-          </div>
-        </div>
-      </section>
-    </div>
+  return (
+    <TempTwo
+      sectionId="market-trends"
+      headingIcon={<HiOutlineMap />}
+      headingText="Trends"
+      title="Market Trends"
+      description={`Stay ahead of the curve by understanding the trends that are shaping the real estate market. Our market analytics services track property demand, pricing shifts, and broader economic patterns. By providing real-time data and forecasts, we equip you with the tools to anticipate market changes and adjust your strategies to maximize returns.
+`}
+      linkText="Discover More"
+      linkHref="#"
+      mapComponent={PricingStrategyGraph}
+      features={features}
+    />
   );
 };
 

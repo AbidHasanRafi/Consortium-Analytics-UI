@@ -190,7 +190,7 @@ const ContactForm = () => {
                 }),
                 singleValue: (base) => ({
                   ...base,
-                  color: "#000",
+                  color: "#fff",
                 }),
                 menu: (base) => ({
                   ...base,
@@ -207,7 +207,7 @@ const ContactForm = () => {
                   fontSize: "0.85rem",
                 }),
               }}
-              placeholder="Select a country"
+              placeholder="Select A Country"
             />
           </div>
 
@@ -273,7 +273,7 @@ const ContactForm = () => {
                   fontSize: "0.85rem",
                 }),
               }}
-              placeholder="Where do you store your geospatial data?*"
+              placeholder="Where Do You Store Your Geospatial Data?*"
             />
           </div>
 

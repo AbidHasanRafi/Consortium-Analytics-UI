@@ -1,7 +1,7 @@
 import React from "react";
 import { HiArrowLongRight } from "react-icons/hi2";
 import img1 from "../../../../../../assets/resources/blog.png";
-import img2 from "../../../../../../assets/resources/case.jpeg";
+import img2 from "../../../../../../assets/resources/case.png";
 import img3 from "../../../../../../assets/resources/partner.png";
 
 const HContents = () => {

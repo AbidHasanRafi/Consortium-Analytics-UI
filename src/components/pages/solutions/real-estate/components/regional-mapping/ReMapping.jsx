@@ -1,54 +1,42 @@
 import React from "react";
-import img from "../../../../../../assets/pages/real-estate/regional-mapping.jpg";
-import { HiArrowLongRight } from "react-icons/hi2";
 import { OpportunityMappingGraph } from "./OpportunityMappingGraph";
+import TempOne from "../../../../../templates/temp-01/TempOne";
+import { MdTrendingUp, MdInsights, MdOutlineSavings } from "react-icons/md";
 
 const ReMapping = () => {
-  return (
-    <div className="max-w-full">
-      <section id="expertise" className="w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-9 items-center justify-between">
-          {/* Right Section with Image (Image on top for small screens, right for larger ones) */}
-          <div className="bg-[#F2F6F9] col-span-1 lg:col-span-4 flex justify-center items-center order-1 lg:order-2">
-            {/* <img
-              className="w-full h-auto"
-              src={img}
-              alt="Property Investment Insights"
-            /> */}
-            <OpportunityMappingGraph />
-          </div>
+  const features = [
+    {
+      icon: <MdTrendingUp />,
+      title: "Market Analysis Tools",
+      description:
+        "Use AI-powered tools to map and analyze emerging markets, identifying undervalued or underdeveloped areas with high growth potential.",
+    },
+    {
+      icon: <MdInsights />,
+      title: "Dynamic Investment Opportunities",
+      description:
+        "Provide real-time, interactive maps that highlight market shifts and changing investment landscapes, enabling fast, data-driven decision-making.",
+    },
+    {
+      icon: <MdOutlineSavings />,
+      title: "Geospatial Visualization",
+      description:
+        "Visualize key location attributes, such as demand trends, property values, and economic data, to pinpoint high-potential investment opportunities.",
+    },
+  ];
 
-          {/* Left Section with White Background (Text) */}
-          <div className="bg-white col-span-1 lg:col-span-5 flex flex-col justify-center px-6 sm:px-8 lg:px-14 py-8 sm:py-12 order-2 lg:order-1">
-            <section className="mx-0 lg:mx-16 my-12">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 text-left">
-                Opportunity Mapping
-              </h2>
-              <p className="text-gray-900 text-lg sm:text-xl">
-                Trade area insights are key when evaluating mergers,
-                acquisitions, or expansions. With Consortium Analytics, assess
-                how customer bases align with business sites and gauge the
-                impact of potential investments.
-              </p>
-              <p className="text-gray-900 text-lg sm:text-xl">
-                From calculating customer density by proximity to exploring
-                untapped opportunities, our tools enable analysts to identify
-                risks and opportunities faster than ever before.
-              </p>
-              <div className="mt-8 sm:mt-12 text-start">
-                <a
-                  href="#"
-                  className="inline-flex items-center text-blue-600 text-sm font-semibold py-2 gap-2 bg-clip-text hover:border-b hover:border-b-blue-600 transition duration-300 transform"
-                >
-                  <span className="text-xs sm:text-sm">Discover More</span>
-                  <HiArrowLongRight className="text-base font-semibold" />
-                </a>
-              </div>
-            </section>
-          </div>
-        </div>
-      </section>
-    </div>
+  return (
+    <TempOne
+      sectionId="opportunity-mapping"
+      headingIcon={<MdTrendingUp />}
+      headingText="Opportunity"
+      title="Opportunity Mapping"
+      description={`Finding investment opportunities requires a strategic understanding of market dynamics. Our opportunity mapping tools use AI and machine learning to identify emerging markets, underdeveloped areas, or undervalued properties. With visualized data, we highlight areas ripe for investment, enabling you to focus on locations with the greatest growth potential.`}
+      linkText="Explore More"
+      linkHref="#explore"
+      chartComponent={OpportunityMappingGraph}
+      features={features}
+    />
   );
 };
 

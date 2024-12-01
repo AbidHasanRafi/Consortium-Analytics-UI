@@ -4,7 +4,7 @@ import img from "../../../../../../assets/pages/sports/sports.svg";
 
 const SHeader = () => {
   return (
-    <div className="w-full min-h-screen bg-slate-950 flex items-center">
+    <div className="w-full min-h-screen bg-gradient-to-b from-gray-900 via-[#002430] to-gray-900 flex items-center">
       {/* Header Content */}
       <div className="w-full mx-auto px-4 sm:px-12 lg:px-24 py-10 sm:py-16 lg:py-20">
         <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -13,7 +13,7 @@ const SHeader = () => {
             <img
               src={img}
               alt="Real Estate Analytics"
-              className="w-full max-w-[350px] sm:max-w-[450px] md:max-w-[500px] object-contain rounded-lg shadow-lg"
+              className="w-full max-w-[350px] sm:max-w-[450px] md:max-w-[500px] object-contain"
             />
           </div>
 
