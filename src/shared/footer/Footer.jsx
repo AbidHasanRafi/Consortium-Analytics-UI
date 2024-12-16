@@ -24,116 +24,140 @@ const Footer = () => {
           <h3 className="text-xl font-semibold text-black mb-4">Expertise</h3>
           <ul className="space-y-2">
             <li>
-              <a href="/expertise" className="hover:text-gray-800 transition">
+              <a href="/visualize" className="hover:text-gray-800 transition">
                 Visualization
               </a>
             </li>
             <li>
-              <a href="/products" className="hover:text-gray-800 transition">
+              <a href="/analytics" className="hover:text-gray-800 transition">
                 Analytics
               </a>
             </li>
             <li>
-              <a href="/resources" className="hover:text-gray-800 transition">
+              <a
+                href="/data-enrichment"
+                className="hover:text-gray-800 transition"
+              >
                 Data Enrichment
               </a>
             </li>
             <li>
-              <a href="/careers" className="hover:text-gray-800 transition">
+              <a
+                href="/data-engineering"
+                className="hover:text-gray-800 transition"
+              >
                 Data Engineering
               </a>
             </li>
             <li>
-              <a href="/careers" className="hover:text-gray-800 transition">
+              <a
+                href="/business-intelligence"
+                className="hover:text-gray-800 transition"
+              >
                 Business Intelligence
               </a>
             </li>
             <li>
-              <a href="/careers" className="hover:text-gray-800 transition">
-                Market Analytics
+              <a
+                href="/market-analysis"
+                className="hover:text-gray-800 transition"
+              >
+                Market Analysis
               </a>
             </li>
             <li>
-              <a href="/careers" className="hover:text-gray-800 transition">
+              <a href="/ai-and-ml" className="hover:text-gray-800 transition">
                 AI and Machine Learning
               </a>
             </li>
             <li>
-              <a href="/careers" className="hover:text-gray-800 transition">
+              <a href="/development" className="hover:text-gray-800 transition">
                 Development
               </a>
             </li>
           </ul>
         </div>
 
-        {/* Solution Link */}
+        {/* Solution Links */}
         <div className="flex flex-col items-center text-center lg:text-start lg:items-start mt-8 sm:mt-4 md:mt-0 mx-14">
           <h3 className="text-xl font-semibold text-black mb-4">Solutions</h3>
           <ul className="space-y-2">
             <li>
-              <a href="/expertise" className="hover:text-gray-800 transition">
+              <a href="/real-estate" className="hover:text-gray-800 transition">
                 Real Estate
               </a>
             </li>
             <li>
-              <a href="/products" className="hover:text-gray-800 transition">
+              <a href="/retail" className="hover:text-gray-800 transition">
                 Retail
               </a>
             </li>
             <li>
-              <a href="/resources" className="hover:text-gray-800 transition">
-                Financial Service
+              <a
+                href="/finance-service"
+                className="hover:text-gray-800 transition"
+              >
+                Financial Services
               </a>
             </li>
             <li>
-              <a href="/careers" className="hover:text-gray-800 transition">
+              <a href="/healthcare" className="hover:text-gray-800 transition">
                 Healthcare
               </a>
             </li>
             <li>
-              <a href="/careers" className="hover:text-gray-800 transition">
+              <a
+                href="/transport-logistics"
+                className="hover:text-gray-800 transition"
+              >
                 Transport & Logistics
               </a>
             </li>
             <li>
-              <a href="/careers" className="hover:text-gray-800 transition">
+              <a
+                href="/city-governance"
+                className="hover:text-gray-800 transition"
+              >
                 Cities and Governance
               </a>
             </li>
             <li>
-              <a href="/careers" className="hover:text-gray-800 transition">
+              <a href="/sports" className="hover:text-gray-800 transition">
                 Sports
               </a>
             </li>
             <li>
-              <a href="/careers" className="hover:text-gray-800 transition">
+              <a href="/education" className="hover:text-gray-800 transition">
                 Education
               </a>
             </li>
           </ul>
         </div>
 
-        {/* Resource Link */}
+        {/* Resource Links */}
         <div className="flex flex-col items-center text-center lg:text-start lg:items-start mt-8 sm:mt-4 md:mt-0 mx-14">
           <h3 className="text-xl font-semibold text-black mb-4">Resources</h3>
           <ul className="space-y-2">
             <li>
-              <a href="/expertise" className="hover:text-gray-800 transition">
+              <a href="/blogs" className="hover:text-gray-800 transition">
                 Blog
               </a>
             </li>
             <li>
-              <a href="/products" className="hover:text-gray-800 transition">
+              <a
+                href="/case-studies"
+                className="hover:text-gray-800 transition"
+              >
                 Case Studies
               </a>
             </li>
             <li>
-              <a href="/resources" className="hover:text-gray-800 transition">
+              <a href="/partners" className="hover:text-gray-800 transition">
                 Partners
               </a>
             </li>
             <li>
-              <a href="/careers" className="hover:text-gray-800 transition">
+              <a href="/tutorials" className="hover:text-gray-800 transition">
                 Tutorials
               </a>
             </li>

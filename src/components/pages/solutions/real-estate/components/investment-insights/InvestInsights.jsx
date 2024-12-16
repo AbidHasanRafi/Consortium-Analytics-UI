@@ -33,7 +33,7 @@ const InvestInsights = () => {
       title="Investment Insights"
       description={`In real estate, investment opportunities go beyond location. Identifying high-potential assets means understanding the "why" behind the value of properties. Our data-driven insights leverage spatial analysis, market trends, and predictive models to help you assess risk and uncover hidden opportunities. With our advanced tools, you can make informed, strategic decisions about where and how to invest in a rapidly evolving market.`}
       linkText="Explore More"
-      linkHref="#explore"
+      linkHref="/case-studies"
       chartComponent={InvestmentGraph}
       features={features}
     />

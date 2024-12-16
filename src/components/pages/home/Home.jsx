@@ -9,6 +9,8 @@ import ContactForm from "../../contact-form/ContactForm";
 import TechNodes from "../../tech-nodes/TechNodes";
 import VisualOverview from "../../visualize/VisualOverview";
 import MarketAnalysis from "../../market-analysis/MarketAnalysis";
+import AIMLSolution from "../../ai-ml-solution/AIMLSolution";
+import DevSolution from "../../dev-solution/DevSolution";
 
 const Home = () => {
   return (
@@ -20,6 +22,8 @@ const Home = () => {
       <VisualOverview />
       <MarketAnalysis />
       <DataEngineering />
+      <AIMLSolution />
+      <DevSolution />
       <AllProducts />
       <AllResources />
       <ContactForm />

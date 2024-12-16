@@ -1,51 +1,42 @@
 import React from "react";
-import img from "../../../../../../assets/pages/sports/perform-analytics.jpg";
-import { HiArrowLongRight } from "react-icons/hi2";
+import { MdTrendingUp, MdInsights, MdOutlineSavings } from "react-icons/md";
+import TempOne from "../../../../../templates/temp-01/TempOne";
+import PerformGraph from "./PerformGraph";
 
 const PerformAnalytics = () => {
-  return (
-    <div className="max-w-full mt-5 lg:mt-10">
-      <section id="expertise" className="w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-9 items-center justify-between">
-          {/* Right Section with Image (Image on top for small screens, right for larger ones) */}
-          <div className="bg-[#F2F6F9] col-span-1 lg:col-span-4 flex justify-center items-center order-1 lg:order-2">
-            <img
-              className="w-full h-auto"
-              src={img}
-              alt="Property Investment Insights"
-            />
-          </div>
+  const features = [
+    {
+      icon: <MdTrendingUp />,
+      title: "Player Performance Tracking",
+      description:
+        "Use advanced analytics to monitor and evaluate individual and team performance metrics, enhancing coaching strategies and player development.",
+    },
+    {
+      icon: <MdInsights />,
+      title: "Game Strategy Optimization",
+      description:
+        " Analyze past game data to identify patterns and improve team strategies, ensuring better decision-making during matches.",
+    },
+    {
+      icon: <MdOutlineSavings />,
+      title: "Health and Fitness Monitoring",
+      description:
+        "Track athletes’ health and fitness data in real-time to optimize training loads, prevent injuries, and improve overall performance.",
+    },
+  ];
 
-          {/* Left Section with White Background (Text) */}
-          <div className="bg-white col-span-1 lg:col-span-5 flex flex-col justify-center px-6 sm:px-8 lg:px-14 py-8 sm:py-12 order-2 lg:order-1">
-            <section className="mx-0 lg:mx-16 my-12">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 text-left">
-                Performance Analytics
-              </h2>
-              <p className="text-gray-900 text-justify text-lg sm:text-xl">
-                Optimize player and team performance with advanced data
-                insights. Our tools analyze game stats, player metrics, and
-                training outcomes, empowering coaches and managers to refine
-                strategies and achieve better results.
-              </p>
-              <p className="text-gray-900 text-justify text-lg sm:text-xl">
-                With our Performance Analytics solutions, you can unlock the
-                full potential of your team and drive success on the field.
-              </p>
-              <div className="mt-8 sm:mt-12 text-start">
-                <a
-                  href="#"
-                  className="inline-flex items-center text-blue-600 text-sm font-semibold py-2 gap-2 bg-clip-text hover:border-b hover:border-b-blue-600 transition duration-300 transform"
-                >
-                  <span className="text-xs sm:text-sm">See Full Demo</span>
-                  <HiArrowLongRight className="text-base font-semibold" />
-                </a>
-              </div>
-            </section>
-          </div>
-        </div>
-      </section>
-    </div>
+  return (
+    <TempOne
+      sectionId="performance-analytics"
+      headingIcon={<MdTrendingUp />}
+      headingText="Analytics"
+      title="Performance Analytics"
+      description={`Understanding and enhancing player and team performance is key to success in sports. Our performance analytics tools gather and analyze data from games, training sessions, and player metrics to provide actionable insights. By identifying strengths, weaknesses, and areas for improvement, we help teams optimize their performance and gain a competitive edge.`}
+      linkText="Explore More"
+      linkHref="/case-studies"
+      chartComponent={PerformGraph}
+      features={features}
+    />
   );
 };
 

@@ -132,7 +132,7 @@ const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden md:flex">
             <a
-              href="#"
+              href="mailto:post.consortium@gmail.com"
               className="bg-transparent text-gray-300 px-6 py-3 font-light rounded-md border-2 border-gray-300 hover:bg-slate-100/10 transition duration-300 text-xs"
             >
               Contact

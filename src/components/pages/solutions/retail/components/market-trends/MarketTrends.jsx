@@ -33,7 +33,7 @@ const MarketTrends = () => {
       title="Market Trends"
       description={`Stay ahead of the curve with real-time insights into retail market trends. Our market analysis tools track shifts in consumer demand, economic indicators, and industry changes, helping you anticipate market movements and adjust strategies accordingly. Whether you're expanding into new regions or refining product offerings, our data-driven insights keep you informed about emerging opportunities.`}
       linkText="Explore More"
-      linkHref="#explore"
+      linkHref="/case-studies"
       chartComponent={TrendGraph}
       features={features}
     />

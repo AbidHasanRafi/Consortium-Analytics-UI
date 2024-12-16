@@ -29,30 +29,30 @@ export const menuData = [
     name: "Expertise",
     link: "#expertise",
     submenu: [
-      { name: "Visualization", link: "#visualization", icon: <FaChartPie /> },
+      { name: "Visualization", link: "/visualize", icon: <FaChartPie /> },
       {
         name: "Analytics",
-        link: "#analytics",
+        link: "/analytics",
         icon: <TbDeviceDesktopAnalytics />,
       },
-      { name: "Data Enrichment", link: "#data-enrichment", icon: <FaPython /> },
+      { name: "Data Enrichment", link: "/data-enrichment", icon: <FaPython /> },
       {
         name: "Data Engineering",
-        link: "#data-engineering",
+        link: "/data-engineering",
         icon: <FaLaptopCode />,
       },
       {
         name: "Business Intelligence",
-        link: "#business-intelligence",
+        link: "/business-intelligence",
         icon: <FaIndustry />,
       },
-      { name: "Market Analysis", link: "#market-analysis", icon: <FaGlobe /> },
+      { name: "Market Analysis", link: "/market-analysis", icon: <FaGlobe /> },
       {
         name: "AI and Machine Learning",
-        link: "#ai-ml",
+        link: "/ai-and-ml",
         icon: <FaMobileAlt />,
       },
-      { name: "Development", link: "#development", icon: <FaLaptopCode /> },
+      { name: "Development", link: "/development", icon: <FaLaptopCode /> },
     ],
   },
   {
@@ -89,10 +89,10 @@ export const menuData = [
     name: "Resources",
     link: "#resources",
     submenu: [
-      { name: "Blog", link: "#", icon: <FaBlog /> },
-      { name: "Case Studies", link: "#", icon: <FaBriefcase /> },
-      { name: "Partners", link: "#", icon: <FaHandshake /> },
-      { name: "Tutorials", link: "#", icon: <FaLaptopCode /> },
+      { name: "Blog", link: "/blogs", icon: <FaBlog /> },
+      { name: "Case Studies", link: "/case-studies", icon: <FaBriefcase /> },
+      { name: "Partners", link: "/partners", icon: <FaHandshake /> },
+      { name: "Tutorials", link: "/tutorials", icon: <FaLaptopCode /> },
     ],
     consortium: [
       {

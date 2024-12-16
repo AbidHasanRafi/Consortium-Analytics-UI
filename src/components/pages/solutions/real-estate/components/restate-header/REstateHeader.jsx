@@ -37,10 +37,10 @@ const REstateHeader = () => {
             <div className="mt-8 sm:mt-12 text-start">
               <div className="inline-block rounded-lg border-2 p-[2px] border-transparent bg-clip-padding">
                 <a
-                  href="#"
+                  href="#request-demo"
                   className="flex items-center text-blue-400 text-sm font-semibold py-2 gap-2 bg-clip-text hover:border-b hover:border-b-blue-500 transition duration-300 transform"
                 >
-                  <p className="text-xs sm:text-sm">Discover More</p>
+                  <p className="text-xs sm:text-sm">Request A Demo</p>
                   <HiArrowLongRight className="text-base font-semibold" />
                 </a>
               </div>

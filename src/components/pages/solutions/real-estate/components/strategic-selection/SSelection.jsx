@@ -32,8 +32,8 @@ const SSelection = () => {
       headingText="Expertise"
       title="Site Selection"
       description={`Choosing the right location is critical for any real estate venture. Our data analytics and visualization services provide key insights into site performance by evaluating spatial data, economic trends, and market conditions. Whether you're looking for the next big commercial development or the ideal residential area, our data-driven approach ensures you select sites with the highest potential for success.`}
-      linkText="Discover More"
-      linkHref="#"
+      linkText="Explore More"
+      linkHref="/case-studies"
       mapComponent={SiteGraph}
       features={features}
     />

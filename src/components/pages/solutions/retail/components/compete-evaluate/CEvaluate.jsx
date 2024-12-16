@@ -32,8 +32,8 @@ const CEvaluate = () => {
       headingText="Evaluation"
       title="Competitor Evaluation"
       description={`Understanding your competition is crucial for strategic positioning. Our competitor evaluation tools use market data and AI-driven analysis to give you a clear picture of your competitors' strengths and weaknesses. By monitoring their pricing strategies, promotions, and market share, we provide actionable insights that help you refine your approach and maintain a competitive advantage.`}
-      linkText="Discover More"
-      linkHref="#"
+      linkText="Explore More"
+      linkHref="/case-studies"
       mapComponent={CompeteGraph}
       features={features}
     />

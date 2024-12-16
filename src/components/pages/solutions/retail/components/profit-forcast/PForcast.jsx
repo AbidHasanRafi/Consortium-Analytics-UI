@@ -33,7 +33,7 @@ const PForcast = () => {
       title="Profit Forecasting"
       description={`Maximizing profitability requires accurate forecasting. Using historical data, market trends, and predictive modeling, we provide insights into future profit potentials. Our profit forecasting tools help you anticipate sales trends, optimize inventory management, and plan pricing strategies, ensuring your business is well-positioned for long-term growth.`}
       linkText="Explore More"
-      linkHref="#explore"
+      linkHref="/case-studies"
       chartComponent={ForecastGraph}
       features={features}
     />

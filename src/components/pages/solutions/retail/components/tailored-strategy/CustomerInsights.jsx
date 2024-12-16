@@ -32,8 +32,8 @@ const CustomerInsights = () => {
       headingText="Insights"
       title="Customer Insights"
       description={`Understanding your customers is key to staying competitive. We provide deep customer insights through data analytics, helping you identify behavior patterns, preferences, and purchasing trends. Our tools enable you to segment your audience effectively, personalize marketing campaigns, and improve customer satisfaction, ultimately driving higher sales and loyalty.`}
-      linkText="Discover More"
-      linkHref="#"
+      linkText="Explore More"
+      linkHref="/case-studies"
       mapComponent={CustomerGraph}
       features={features}
     />

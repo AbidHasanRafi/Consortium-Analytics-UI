@@ -129,7 +129,10 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="max-w-full bg-gray-900 font-inter px-6 sm:px-12 lg:px-40 mx-auto p-6 py-16 lg:py-32 shadow-md">
+    <section
+      id="request-demo"
+      className="max-w-full bg-gray-900 font-inter px-6 sm:px-12 lg:px-40 mx-auto p-6 py-16 lg:py-32 shadow-md"
+    >
       <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-6">
         Request a Demo
       </h2>
@@ -273,7 +276,7 @@ const ContactForm = () => {
                   fontSize: "0.85rem",
                 }),
               }}
-              placeholder="Where Do You Store Your Geospatial Data?*"
+              placeholder="Where Do You Store Your Data?*"
             />
           </div>
 

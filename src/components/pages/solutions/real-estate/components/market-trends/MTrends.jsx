@@ -33,7 +33,7 @@ const MTrends = () => {
       title="Pricing Strategy"
       description={`Setting the right price is crucial for success in real estate investment. Our data enrichment and business intelligence tools analyze market demand, comparable sales, and future price projections to help you determine the optimal pricing strategy. Whether you're pricing individual properties or an entire portfolio, our data-driven approach ensures your pricing aligns with market realities and maximizes returns.`}
       linkText="Explore More"
-      linkHref="#explore"
+      linkHref="/case-studies"
       chartComponent={MarketTrendsGraph}
       features={features}
     />

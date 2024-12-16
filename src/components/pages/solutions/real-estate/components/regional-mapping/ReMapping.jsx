@@ -33,7 +33,7 @@ const ReMapping = () => {
       title="Opportunity Mapping"
       description={`Finding investment opportunities requires a strategic understanding of market dynamics. Our opportunity mapping tools use AI and machine learning to identify emerging markets, underdeveloped areas, or undervalued properties. With visualized data, we highlight areas ripe for investment, enabling you to focus on locations with the greatest growth potential.`}
       linkText="Explore More"
-      linkHref="#explore"
+      linkHref="/case-studies"
       chartComponent={OpportunityMappingGraph}
       features={features}
     />

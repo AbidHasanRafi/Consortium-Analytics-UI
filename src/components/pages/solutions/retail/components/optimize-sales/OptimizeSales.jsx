@@ -33,7 +33,7 @@ const OptimizeSales = () => {
       title="Location Analytics"
       description={`The success of a retail business is often tied to location. Our location analytics service combines geographic data with market trends to identify the best places to open new stores or optimize existing ones. By considering factors like foot traffic, local demographics, and competitive landscape, we help you select the most strategic locations for growth.`}
       linkText="Explore More"
-      linkHref="#explore"
+      linkHref="/case-studies"
       chartComponent={OptimizeGraph}
       features={features}
     />
