@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "react-phone-input-2/lib/style.css";
 import countries from "../../assets/countries.json";
 import Select from "react-select";
 import PhoneInput from "react-phone-input-2";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -19,18 +20,20 @@ const ContactForm = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [status, setStatus] = useState("");
   const [countryOptions, setCountryOptions] = useState([]);
+  const form = useRef(); // Add useRef for the form
 
   const dataStorageOptions = [
-    { value: "excel", label: "Excel" },
-    { value: "postgresql", label: "PostgreSQL" },
-    { value: "mysql", label: "MySQL" },
-    { value: "mongodb", label: "MongoDB" },
-    { value: "azure", label: "Azure" },
-    { value: "amazon", label: "Amazon" },
-    { value: "bigquery", label: "BigQuery" },
-    { value: "dropbox", label: "Dropbox" },
-    { value: "others", label: "Others" },
+    { value: "Data Analytic", label: "Data Analytics" },
+    { value: "Website Development", label: "Website Development" },
+    { value: "Power BI Dashboards", label: "Power BI Dashboards" },
+    { value: "Mobile App Development", label: "Mobile App Development" },
+    { value: "Custom Software", label: "Custom Software" },
+    { value: "Cloud Integration", label: "Cloud Integration" },
+    { value: "E-Commerce Development", label: "E-Commerce Development" },
+    { value: "UX Design", label: "UX Design" },
+    { value: "System Architecture", label: "System Architecture" },
   ];
 
   const employeeRanges = [
@@ -77,33 +80,60 @@ const ContactForm = () => {
       newErrors.companyName = "Company Name is required";
     if (!formData.employees)
       newErrors.employees = "Number of employees is required";
-    if (!formData.consent) newErrors.consent = "You must consent to proceed"; // Add consent validation
+    if (!formData.consent) newErrors.consent = "You must consent to proceed";
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
   const handleChange = (field, value) => {
-    if (field === "consent") {
-      setFormData((prev) => ({ ...prev, consent: value }));
-    } else {
-      setFormData((prev) => ({ ...prev, [field]: value }));
-    }
+    setFormData((prev) => ({ ...prev, [field]: value }));
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     if (validate()) {
-      console.log("Form Data Submitted:", formData);
+      setStatus("Sending...");
+      emailjs
+        .sendForm(
+          "service_xcciirj",
+          "template_bx7p51c",
+          form.current,
+          "IlPuvhM93Ga-bSu6i"
+        )
+        .then(
+          () => {
+            setStatus("Email sent successfully!");
+            setFormData({
+              firstName: "",
+              lastName: "",
+              email: "",
+              country: null,
+              phone: "",
+              dataStorage: null,
+              jobTitle: "",
+              companyName: "",
+              employees: null,
+              consent: false,
+            });
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+            setStatus("Failed to send email.");
+          }
+        );
     }
   };
 
   const customStyles = {
     control: (base, state) => ({
       ...base,
-      backgroundColor: "#1a202c",
+      backgroundColor: "#111827",
       color: "white",
       borderColor: state.isFocused ? "#2d3748" : "#ffffff",
+      borderRadius: "0.3rem",
+      height: "45px",
+      padding: "0.1rem",
       boxShadow: state.isFocused ? "0 0 0 1px #2d3748" : "none",
       "&:hover": {
         borderColor: "#ffffff",
@@ -124,7 +154,8 @@ const ContactForm = () => {
     }),
     placeholder: (base) => ({
       ...base,
-      color: "#a0aec0",
+      color: "white",
+      fontSize: "0.875rem",
     }),
   };
 
@@ -137,11 +168,11 @@ const ContactForm = () => {
         Request a Demo
       </h2>
       <p className="text-lg text-white text-center mb-8">
-        Schedule a 20-minute meeting with our experts to understand how you can
-        use spatial analysis in your organization.
+        Book a 30-minute session with our experts to explore how our analytics,
+        development, and AI-driven solutions can transform your organization.
       </p>
 
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form ref={form} onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7">
           {/* Standard Input Fields */}
           {[
@@ -154,6 +185,7 @@ const ContactForm = () => {
             <div key={id} className="relative">
               <input
                 type={type}
+                name={id} // Add name attribute
                 value={formData[id]}
                 onChange={(e) => handleChange(id, e.target.value)}
                 className={`peer w-full bg-gray-900 text-white border p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500`}
@@ -177,39 +209,12 @@ const ContactForm = () => {
           {/* Country Input */}
           <div className="flex flex-col">
             <Select
+              name="country" // Add name attribute
               value={formData.country}
               onChange={(value) => handleChange("country", value)}
               options={countryOptions}
               classNamePrefix="custom-select"
-              styles={{
-                control: (base) => ({
-                  ...base,
-                  backgroundColor: "#1a202c",
-                  borderColor: "white",
-                  color: "white",
-                  borderRadius: "0.3rem",
-                  height: "45px",
-                  padding: "0.1rem",
-                }),
-                singleValue: (base) => ({
-                  ...base,
-                  color: "#fff",
-                }),
-                menu: (base) => ({
-                  ...base,
-                  backgroundColor: "#fff",
-                  color: "#000",
-                }),
-                menuList: (base) => ({
-                  ...base,
-                  color: "#000",
-                }),
-                placeholder: (base) => ({
-                  ...base,
-                  color: "white",
-                  fontSize: "0.85rem",
-                }),
-              }}
+              styles={customStyles}
               placeholder="Select A Country"
             />
           </div>
@@ -217,12 +222,13 @@ const ContactForm = () => {
           {/* Phone Input */}
           <div className="flex flex-col">
             <PhoneInput
+              name="phone"
               value={formData.phone}
               onChange={(value) => handleChange("phone", value)}
               country={"bd"}
               inputClass="bg-gray-900 text-white border p-3 rounded-sm"
               inputStyle={{
-                backgroundColor: "#1a202c",
+                backgroundColor: "#111827",
                 color: "white",
                 border: "1px solid white",
                 borderRadius: "0.3rem",
@@ -230,7 +236,7 @@ const ContactForm = () => {
                 width: "100%",
               }}
               buttonStyle={{
-                backgroundColor: "#1a202c",
+                backgroundColor: "#111827",
                 border: "1px solid white",
               }}
               dropdownStyle={{
@@ -240,82 +246,28 @@ const ContactForm = () => {
             />
           </div>
 
-          {/* Geospatial Data Storage */}
+          {/* Data Storage */}
           <div className="flex flex-col">
             <Select
+              name="dataStorage" // Add name attribute
               value={formData.dataStorage}
               onChange={(value) => handleChange("dataStorage", value)}
               options={dataStorageOptions}
               classNamePrefix="custom-select"
-              styles={{
-                control: (base) => ({
-                  ...base,
-                  backgroundColor: "#1a202c",
-                  borderColor: "white",
-                  color: "white",
-                  borderRadius: "0.3rem",
-                  height: "45px",
-                  padding: "0.1rem",
-                }),
-                singleValue: (base) => ({
-                  ...base,
-                  color: "white",
-                }),
-                menu: (base) => ({
-                  ...base,
-                  backgroundColor: "#fff",
-                  color: "#000",
-                }),
-                menuList: (base) => ({
-                  ...base,
-                  color: "#000",
-                }),
-                placeholder: (base) => ({
-                  ...base,
-                  color: "white",
-                  fontSize: "0.85rem",
-                }),
-              }}
-              placeholder="Where Do You Store Your Data?*"
+              styles={customStyles}
+              placeholder="What demo best fits your needs?*"
             />
           </div>
 
           {/* Number of Employees */}
           <div className="flex flex-col">
             <Select
+              name="employees" // Add name attribute
               value={formData.employees}
               onChange={(value) => handleChange("employees", value)}
               options={employeeRanges}
               classNamePrefix="custom-select"
-              styles={{
-                control: (base) => ({
-                  ...base,
-                  backgroundColor: "#1a202c",
-                  borderColor: "white",
-                  color: "white",
-                  borderRadius: "0.3rem",
-                  height: "45px",
-                  padding: "0.1rem",
-                }),
-                singleValue: (base) => ({
-                  ...base,
-                  color: "white",
-                }),
-                menu: (base) => ({
-                  ...base,
-                  backgroundColor: "#fff",
-                  color: "#000",
-                }),
-                menuList: (base) => ({
-                  ...base,
-                  color: "#000",
-                }),
-                placeholder: (base) => ({
-                  ...base,
-                  color: "white",
-                  fontSize: "0.85rem",
-                }),
-              }}
+              styles={customStyles}
               placeholder="Number of Employees*"
             />
           </div>
@@ -330,6 +282,7 @@ const ContactForm = () => {
             <label className="flex items-center">
               <input
                 type="radio"
+                name="usesGeospatial" // Add name attribute
                 value="Yes"
                 checked={formData.usesGeospatial === "Yes"}
                 onChange={() => handleChange("usesGeospatial", "Yes")}
@@ -340,6 +293,7 @@ const ContactForm = () => {
             <label className="flex items-center">
               <input
                 type="radio"
+                name="usesGeospatial" // Add name attribute
                 value="No"
                 checked={formData.usesGeospatial === "No"}
                 onChange={() => handleChange("usesGeospatial", "No")}
@@ -361,6 +315,7 @@ const ContactForm = () => {
             <label className="flex items-center text-white">
               <input
                 type="checkbox"
+                name="consent" // Add name attribute
                 checked={formData.consent}
                 onChange={(e) => handleChange("consent", e.target.checked)}
                 className="mr-2"
@@ -382,6 +337,7 @@ const ContactForm = () => {
             Request a Demo
           </button>
         </div>
+        {status && <p className="text-white">{status}</p>}
       </form>
     </section>
   );

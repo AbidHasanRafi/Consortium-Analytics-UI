@@ -16,56 +16,56 @@ const cards = [
     title: "Real Estate",
     description:
       "Unlock the potential of real estate with data insights for better investments and management.",
-    link: "https://example.com/real-estate",
+    link: "/real-estate",
     icon: <MdRealEstateAgent />,
   },
   {
     title: "Retail",
     description:
       "Transform retail with data-driven insights to enhance customer experience and drive sales.",
-    link: "https://example.com/retail",
+    link: "/retail",
     icon: <FaShoppingCart />,
   },
   {
     title: "Financial Services",
     description:
       "Leverage analytics to make data-backed financial decisions and optimize investments.",
-    link: "https://example.com/finance-service",
+    link: "/finance-service",
     icon: <FaBriefcase />,
   },
   {
     title: "Healthcare",
     description:
       "Empower healthcare providers with insights that improve patient outcomes and efficiency.",
-    link: "https://example.com/healthcare",
+    link: "/healthcare",
     icon: <FaStethoscope />,
   },
   {
     title: "Cities and Governance",
     description:
       "Use analytics to build smarter cities and improve public services for citizens.",
-    link: "https://example.com/city-governance",
+    link: "/city-governance",
     icon: <RiGovernmentFill />,
   },
   {
     title: "Transport & Logistics",
     description:
       "Optimize logistics and transportation with data insights for streamlined operations.",
-    link: "https://example.com/transport-logistics",
+    link: "/transport-logistics",
     icon: <FaTruckMoving />,
   },
   {
     title: "Sports",
     description:
       "Revolutionize sports with performance analytics, talent identification, and audience engagement.",
-    link: "https://example.com/sports",
+    link: "/sports",
     icon: <GiMedallist />,
   },
   {
     title: "Education",
     description:
       "Empower education with tools and insights to enhance learning outcomes and accessibility.",
-    link: "https://example.com/education",
+    link: "/education",
     icon: <FaUniversity />,
   },
 ];

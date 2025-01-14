@@ -1,14 +1,14 @@
 import React from "react";
-import img1 from "../../../../../../assets/blogs/header/header.jpg";
+import img1 from "../../../../../../assets/blogs/header/1.png";
 import auth01 from "../../../../../../assets/blogs/authors/author01.jpg";
 
 const HeadSection = () => {
   return (
-    <div className="grid grid-cols-4 gap-4 p-4">
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-4 sm:p-2">
       {/* Main Post Section */}
-      <div className="col-span-3 p-10">
+      <div className="col-span-1 md:col-span-3 p-4 md:p-10">
         {/* Header Image with zoom effect */}
-        <div className="w-full overflow-hidden mb-4">
+        <div className="w-full overflow-hidden mb-3 md:mb-4">
           <img
             src={img1}
             alt="Featured Post"
@@ -17,7 +17,7 @@ const HeadSection = () => {
         </div>
 
         {/* Author Info and Date */}
-        <div className="text-gray-500 my-5 mb-2 text-base flex items-center">
+        <div className="text-gray-500 my-3 md:my-5 text-sm md:text-base flex items-center">
           <img
             className="w-6 h-6 rounded-full mr-2"
             src={auth01}
@@ -28,68 +28,82 @@ const HeadSection = () => {
               Md. Shohidullah Samrat
             </span>
             <span className="mx-2">&#183;</span>
-            <span>Nov 21, 2024</span>
+            <span>Dec 01, 2024</span>
           </p>
         </div>
 
         {/* Post Title */}
-        <h2 className="text-black text-4xl font-medium mb-2">
-          How to Interpret Regression Results in Data Analysis
-        </h2>
+        <a href="/bar-charts">
+          <h2 className="text-black hover:text-blue-700 text-3xl sm:text-4xl font-medium mb-2">
+            Bar Charts: An Effective Data Visualization Tool
+          </h2>
+        </a>
 
         {/* Meta Title */}
-        <p className="text-gray-700 mb-4">
-          Understanding how to interpret the results of regression analysis is
-          key to making data-driven decisions. In this post, we will walk
-          through how to read and interpret regression coefficients, p-values,
-          and confidence intervals.
+        <p className="text-gray-700 mb-4 text-sm sm:text-base">
+          Data visualization is an essential step in data analysis, transforming
+          raw data into insights that are both actionable and easy to
+          understand. Among the wide variety of visualization techniques
+          available, one of the most versatile and widely used tools is the bar
+          chart.
         </p>
 
         {/* Category */}
         <span className="text-blue-500 font-semibold">News</span>
       </div>
 
-      {/* Recent Posts Section */}
-      <div className="p-10">
+      {/* Top Posts Section */}
+      <div className="p-4 md:p-10 mt-6 md:mt-0">
         <h3 className="text-lg font-semibold mb-3 border-b">Top Posts</h3>
-        <ul className="space-y-4">
+        <ul className="space-y-3 md:space-y-4">
           <li>
-            <span className="block text-blue-500 font-semibold">News</span>
-            <h4 className="font-medium text-gray-800">
-              What's New in Consortium Analytics - Q3 2024
-            </h4>
+            <span className="block text-blue-500 font-semibold">Insights</span>
+            <a href="/dashboard-for-business-analytics">
+              <h4 className="hover:underline font-medium text-gray-800">
+                The Power of Dashboards in Business Analytics: Unlocking
+                Actionable Insights
+              </h4>
+            </a>
             <p className="text-sm text-gray-500">
-              Javier Pérez Trufero &#183; Helen McKenzie &#183; Oct 9, 2024
+              Md. Shohidullah Samrat &#183; 05 Dec, 2024
             </p>
           </li>
           <li>
             <span className="block text-blue-500 font-semibold">
-              Spatial Data Science
+              Business Data
             </span>
-            <h4 className="font-medium text-gray-800">
-              What space-time analysis tells us about the Paris Olympics
-            </h4>
+            <a href="/data-storytelling">
+              <h4 className="hover:underline font-medium text-gray-800">
+                Data Storytelling: Unlocking the Full Potential of Your Business
+                Data
+              </h4>
+            </a>
             <p className="text-sm text-gray-500">
-              Diego Vicente &#183; Helen McKenzie &#183; Sep 19, 2024
+              Md. Shohidullah Samrat &#183; 10 Dec, 2024
             </p>
           </li>
           <li>
-            <span className="block text-blue-500 font-semibold">Use cases</span>
-            <h4 className="font-medium text-gray-800">
-              Urban Mobility Insights with MovingPandas & Consortium Analytics
-              in Snowflake
-            </h4>
+            <span className="block text-blue-500 font-semibold">Tools</span>
+            <a href="/data-visualisation-tool">
+              <h4 className="hover:underline font-medium text-gray-800">
+                Unlocking Insights with Data Visualization Tools: Power BI,
+                Tableau, and Google Looker Studio
+              </h4>
+            </a>
             <p className="text-sm text-gray-500">
-              Argyrios Kyrgiazos &#183; Anita Graser &#183; Sep 5, 2024
+              Md. Shohidullah Samrat &#183; 12 Dec, 2024
             </p>
           </li>
           <li>
-            <span className="block text-blue-500 font-semibold">Events</span>
-            <h4 className="font-medium text-gray-800">
-              Discover the Future of Spatial Data Science at SDSC24 New York
-            </h4>
+            <span className="block text-blue-500 font-semibold">Solutions</span>
+            <a href="/empowering-business">
+              <h4 className="hover:underline font-medium text-gray-800">
+                Empowering Businesses with Data-Driven Insights and Innovative
+                Solutions
+              </h4>
+            </a>
             <p className="text-sm text-gray-500">
-              Daria Kolarczyk &#183; Aug 29, 2024
+              Md. Shohidullah Samrat &#183; 15 Dec, 2024
             </p>
           </li>
         </ul>

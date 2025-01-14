@@ -6,7 +6,7 @@ import DemoReq from "./components/demo-request/DemoReq";
 
 const Blogs = () => {
   return (
-    <div className="bg-white min-h-screen mt-16 px-16">
+    <div className="bg-white min-h-screen mt-16 px-1 lg:px-16">
       <HeadSection />
       <BlogList />
       <div className="space-y-20 pb-20">

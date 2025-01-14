@@ -1,8 +1,8 @@
 import React from "react";
 import { HiArrowLongRight } from "react-icons/hi2";
-import img1 from "../../assets/resources/blog.png";
-import img2 from "../../assets/resources/case.png";
-import img3 from "../../assets/resources/partner.png";
+import img1 from "../../assets/blogs/header/1.png";
+import img2 from "../../assets/case-studies/6.png";
+import img3 from "../../assets/resources/partner-resource.jpg";
 
 const AllResources = () => {
   return (
@@ -24,16 +24,17 @@ const AllResources = () => {
               Blog
             </h2>
             <h3 className="text-lg font-mont font-semibold text-gray-800 mb-4">
-              Insights and Expertise
+              Bar Charts: An Effective Data Visualization Tool
             </h3>
             <p className="text-gray-900 text-sm md:text-base flex-1">
-              Explore expert opinions, insights, and actionable guides that
-              delve deep into the latest industry trends and innovations.
+              Data visualization is an essential step in data analysis,
+              transforming raw data into insights that are both actionable and
+              easy to understand.
             </p>
             <div className="mt-4 text-start">
               <div className="inline-block rounded-lg border-2 p-[2px] border-transparent bg-clip-padding">
                 <a
-                  href="#"
+                  href="/blogs"
                   className="flex items-center text-blue-600 text-sm font-semibold py-2 gap-2 bg-clip-text hover:border-b hover:border-b-blue-600 transition duration-300 transform"
                 >
                   <p className="text-xs sm:text-sm">Explore More</p>
@@ -54,16 +55,16 @@ const AllResources = () => {
               Case Studies
             </h2>
             <h3 className="text-lg font-mont font-semibold text-gray-800 mb-4">
-              Real-World Applications
+              The Evolution and Impact of Computer Operating Systems (OS)
             </h3>
             <p className="text-gray-900 text-sm md:text-base flex-1">
-              Learn from real-world scenarios detailing challenges, innovative
-              solutions, and measurable results that drive success.
+              The computer operating system (OS) has been the cornerstone of
+              technological evolution since the inception of modern computing.
             </p>
             <div className="mt-4 text-start">
               <div className="inline-block rounded-lg border-2 p-[2px] border-transparent bg-clip-padding">
                 <a
-                  href="#"
+                  href="/case-studies"
                   className="flex items-center text-blue-600 text-sm font-semibold py-2 gap-2 bg-clip-text hover:border-b hover:border-b-blue-600 transition duration-300 transform"
                 >
                   <p className="text-xs sm:text-sm">Explore More</p>
@@ -93,7 +94,7 @@ const AllResources = () => {
             <div className="mt-4 text-start">
               <div className="inline-block rounded-lg border-2 p-[2px] border-transparent bg-clip-padding">
                 <a
-                  href="#"
+                  href="/partners"
                   className="flex items-center text-blue-600 text-sm font-semibold py-2 gap-2 bg-clip-text hover:border-b hover:border-b-blue-600 transition duration-300 transform"
                 >
                   <p className="text-xs sm:text-sm">Explore More</p>

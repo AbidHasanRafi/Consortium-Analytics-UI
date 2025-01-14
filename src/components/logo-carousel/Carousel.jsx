@@ -79,7 +79,7 @@ const Carousel = () => {
 
   return (
     <div className="carousel-container relative overflow-hidden w-full h-[200px] bg-gray-900">
-      <p className="text-center text-white mb-3 md:mb-5">
+      <p className="text-center text-sm lg:text-base px-5 text-white mb-3 md:mb-5">
         Access more than 50,000 datasets from trusted sources
       </p>
       <Slider {...settings}>

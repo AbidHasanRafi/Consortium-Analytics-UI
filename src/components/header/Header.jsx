@@ -83,7 +83,7 @@ const Header = () => {
                 animation: "gradient-move 5s ease infinite",
               }}
             >
-              Data Analytics Company
+              Technology Company
             </span>
           </h1>
         </div>

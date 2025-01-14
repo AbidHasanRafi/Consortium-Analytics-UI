@@ -16,12 +16,13 @@ import {
   FaBlog,
   FaBriefcase,
   FaHandshake,
+  FaNodeJs,
 } from "react-icons/fa";
 import { MdRealEstateAgent } from "react-icons/md";
 import { RiGovernmentFill } from "react-icons/ri";
-import { GiMedallist } from "react-icons/gi";
+import { GiMedallist, GiAtom } from "react-icons/gi";
 import { TbDeviceDesktopAnalytics } from "react-icons/tb";
-import { SiCsharp } from "react-icons/si";
+import { BiLogoDjango } from "react-icons/bi";
 
 export const menuData = [
   { name: "Home", link: "/" },
@@ -92,7 +93,7 @@ export const menuData = [
       { name: "Blog", link: "/blogs", icon: <FaBlog /> },
       { name: "Case Studies", link: "/case-studies", icon: <FaBriefcase /> },
       { name: "Partners", link: "/partners", icon: <FaHandshake /> },
-      { name: "Tutorials", link: "/tutorials", icon: <FaLaptopCode /> },
+      // { name: "Tutorials", link: "/tutorials", icon: <FaLaptopCode /> },
     ],
     consortium: [
       {
@@ -100,14 +101,14 @@ export const menuData = [
         icon: <FaGoogle />,
         link: "https://cloud.google.com",
       },
+      { name: "AWS", icon: <FaAws />, link: "https://aws.amazon.com" },
       {
         name: "Azure",
         icon: <FaMicrosoft />,
         link: "https://azure.microsoft.com",
       },
-      { name: "AWS", icon: <FaAws />, link: "https://aws.amazon.com" },
       {
-        name: "Microsoft Power BI",
+        name: "Power BI",
         icon: <FaMicrosoft />,
         link: "https://powerbi.microsoft.com",
       },
@@ -118,11 +119,6 @@ export const menuData = [
       },
       { name: "Snowflake", icon: <FaAws />, link: "https://www.snowflake.com" },
       {
-        name: "Google Analytics",
-        icon: <FaGoogle />,
-        link: "https://analytics.google.com",
-      },
-      {
         name: "SAS",
         icon: <TbDeviceDesktopAnalytics />,
         link: "https://www.sas.com",
@@ -130,9 +126,19 @@ export const menuData = [
       { name: "Python", icon: <FaPython />, link: "https://www.python.org" },
       { name: "R", icon: <FaRProject />, link: "https://www.r-project.org" },
       {
-        name: "C#",
-        icon: <SiCsharp />,
-        link: "https://learn.microsoft.com/en-us/dotnet/csharp/",
+        name: "Django",
+        icon: <BiLogoDjango />,
+        link: "https://www.djangoproject.com",
+      },
+      {
+        name: "React",
+        icon: <GiAtom />,
+        link: "https://reactjs.org",
+      },
+      {
+        name: "Node.js",
+        icon: <FaNodeJs />,
+        link: "https://nodejs.org",
       },
     ],
   },

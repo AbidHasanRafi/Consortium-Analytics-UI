@@ -170,10 +170,21 @@ const Navbar = () => {
               {menuData.map((menu) => (
                 <li key={menu.name} className="mb-4">
                   <div
-                    onClick={() => handleMobileSubMenuToggle(menu.name)}
-                    className="flex items-center justify-between cursor-pointer text-base font-bold hover:text-blue-400"
+                    onClick={() =>
+                      menu.submenu ? handleMobileSubMenuToggle(menu.name) : null
+                    }
+                    className={`flex items-center justify-between cursor-pointer text-base font-bold ${
+                      menu.submenu ? "hover:text-blue-400" : ""
+                    }`}
                   >
-                    {menu.name}
+                    <a
+                      href={menu.link || "#"} // Ensure "Home" and "Contact" are clickable
+                      className={
+                        menu.submenu ? "block w-full" : "hover:text-blue-400"
+                      }
+                    >
+                      {menu.name}
+                    </a>
                     {menu.submenu && (
                       <FaAngleDown
                         className={`transition-transform ${

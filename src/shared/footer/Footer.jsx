@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
 
         {/* Expertise Links */}
-        <div className="flex flex-col items-center text-center lg:text-start lg:items-start mt-8 sm:mt-4 md:mt-0 mx-14">
+        <div className="flex flex-col items-center text-center lg:text-start lg:items-start mt-8 sm:mt-4 md:mt-0 mx-5 lg:mx-10">
           <h3 className="text-xl font-semibold text-black mb-4">Expertise</h3>
           <ul className="space-y-2">
             <li>
@@ -79,7 +79,7 @@ const Footer = () => {
         </div>
 
         {/* Solution Links */}
-        <div className="flex flex-col items-center text-center lg:text-start lg:items-start mt-8 sm:mt-4 md:mt-0 mx-14">
+        <div className="flex flex-col items-center text-center lg:text-start lg:items-start mt-8 sm:mt-4 md:mt-0 mx-5 lg:mx-10">
           <h3 className="text-xl font-semibold text-black mb-4">Solutions</h3>
           <ul className="space-y-2">
             <li>
@@ -135,7 +135,7 @@ const Footer = () => {
         </div>
 
         {/* Resource Links */}
-        <div className="flex flex-col items-center text-center lg:text-start lg:items-start mt-8 sm:mt-4 md:mt-0 mx-14">
+        <div className="flex flex-col items-center text-center lg:text-start lg:items-start mt-8 sm:mt-4 md:mt-0 mx-5 lg:mx-10">
           <h3 className="text-xl font-semibold text-black mb-4">Resources</h3>
           <ul className="space-y-2">
             <li>
@@ -154,11 +154,6 @@ const Footer = () => {
             <li>
               <a href="/partners" className="hover:text-gray-800 transition">
                 Partners
-              </a>
-            </li>
-            <li>
-              <a href="/tutorials" className="hover:text-gray-800 transition">
-                Tutorials
               </a>
             </li>
           </ul>
@@ -204,8 +199,8 @@ const Footer = () => {
       {/* Bottom Section */}
       <div className="flex flex-col sm:flex-row justify-between items-center text-gray-900 px-6 py-4 space-y-4 sm:space-y-0">
         <div className="text-sm">
-          <a href="mailto:post.consortium@gmail.com">
-            post.consortium@gmail.com
+          <a href="mailto:post@consortiumanalytics.eu">
+            post@consortiumanalytics.eu
           </a>
         </div>
         <div className="text-center lg:text-start">

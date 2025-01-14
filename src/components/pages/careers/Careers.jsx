@@ -1,11 +1,14 @@
 import React from "react";
+import CareersHeader from "./components/careers-header/CareersHeader";
+import LogoGrid from "./components/logo-grid/LogoGrid";
+import OurTeams from "./components/our-teams/OurTeams";
 
 const Careers = () => {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-900">
-      <h3 className="text-2xl font-semibold text-gray-400">
-        Careers page is under construction!
-      </h3>
+    <div className="font-mont bg-[#F2F6F9] pb-10">
+      <CareersHeader />
+      <LogoGrid />
+      <OurTeams />
     </div>
   );
 };

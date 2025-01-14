@@ -1,11 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Common BlogPost component
-const BlogPost = ({ title, headerImage, content, author, date, category }) => {
+const BlogPost = ({
+  title,
+  headerImage,
+  content,
+  author,
+  date,
+  category,
+  link,
+}) => {
   return (
     <div className="mb-8">
       {/* Container for header image without rounded borders */}
-      <div className="w-full h-60 overflow-hidden mb-6">
+      <div className="w-full overflow-hidden mb-6">
         <img
           src={headerImage}
           alt="Header"
@@ -27,9 +36,13 @@ const BlogPost = ({ title, headerImage, content, author, date, category }) => {
       </div>
 
       {/* Title */}
-      <h2 className="text-3xl font-semibold text-gray-900 mb-4 hover:text-blue-600 transition-colors duration-200 cursor-pointer">
-        {title}
-      </h2>
+      <Link to={link}>
+        {" "}
+        {/* Wrap title in Link for routing */}
+        <h2 className="text-3xl font-semibold text-gray-900 mb-4 hover:text-blue-600 transition-colors duration-200 cursor-pointer">
+          {title}
+        </h2>
+      </Link>
 
       {/* Content */}
       <p className="text-gray-700 text-sm leading-relaxed mb-6">{content}</p>

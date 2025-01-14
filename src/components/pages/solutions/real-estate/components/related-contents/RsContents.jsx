@@ -33,7 +33,7 @@ const RsContents = () => {
             <div className="mt-4 text-start">
               <div className="inline-block rounded-lg border-2 p-[2px] border-transparent bg-clip-padding">
                 <a
-                  href="#"
+                  href="/blogs"
                   className="flex items-center text-blue-600 text-sm font-semibold py-2 gap-2 bg-clip-text hover:border-b hover:border-b-blue-600 transition duration-300 transform"
                 >
                   <p className="text-xs sm:text-sm">Explore More</p>
@@ -63,7 +63,7 @@ const RsContents = () => {
             <div className="mt-4 text-start">
               <div className="inline-block rounded-lg border-2 p-[2px] border-transparent bg-clip-padding">
                 <a
-                  href="#"
+                  href="/case-studies"
                   className="flex items-center text-blue-600 text-sm font-semibold py-2 gap-2 bg-clip-text hover:border-b hover:border-b-blue-600 transition duration-300 transform"
                 >
                   <p className="text-xs sm:text-sm">Explore More</p>
@@ -93,7 +93,7 @@ const RsContents = () => {
             <div className="mt-4 text-start">
               <div className="inline-block rounded-lg border-2 p-[2px] border-transparent bg-clip-padding">
                 <a
-                  href="#"
+                  href="/partners"
                   className="flex items-center text-blue-600 text-sm font-semibold py-2 gap-2 bg-clip-text hover:border-b hover:border-b-blue-600 transition duration-300 transform"
                 >
                   <p className="text-xs sm:text-sm">Explore More</p>
